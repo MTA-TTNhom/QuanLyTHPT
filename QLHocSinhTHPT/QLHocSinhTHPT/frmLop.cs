@@ -113,7 +113,57 @@ namespace QLHocSinhTHPT
         #endregion
 
 
+        #region DataError event
+        private void dGVLop_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+        }
+        #endregion
 
+        #region Tìm kiếm lớp
+        private void txtTimKiem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                TimKiemLop();
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            TimKiemLop();
+        }
+
+        void TimKiemLop()
+        {
+            if (chkTimTheoMa.Checked == true)
+            {
+                m_LopCtrl.TimTheoMa(txtTimKiem.Text);
+            }
+            else
+            {
+                m_LopCtrl.TimTheoTen(txtTimKiem.Text);
+            }
+        }
+        #endregion
+
+        #region Click event
+
+
+        private void btnThemNamHoc_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormNamHoc();
+            m_NamHocCtrl.HienThiDataGridViewComboBoxColumn(colMaNamHoc);
+        }
+
+        private void btnThemGiaoVien_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormGiaoVien();
+            m_GiaoVienCtrl.HienThiDataGridViewComboBoxColumn(colMaGiaoVien);
+        }
+
+
+        #endregion
 
     }
 }
