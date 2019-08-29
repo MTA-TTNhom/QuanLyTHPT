@@ -62,21 +62,7 @@ namespace QLHocSinhTHPT
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.panel7 = new System.Windows.Forms.Panel();
           
-        private int ChangeInfo()
-        {
-            int _id = Convert.ToInt32(tbID.Text.Trim(' '));
-            DateTime _dateOfBirth = dtpkDateOfBirth.Value;
-            string _name = tbName.Text.Trim(' ');
-            string _userName = tbUserName.Text.Trim(' ');
-            int _sex;
-            if (cbbSex.Text == "Nam") _sex = 1;
-            else _sex = 0;
-            float _salary = (float)Convert.ToDouble(tbSalary.Text);
-            string _telephoneNumber = tbTelephoneNumber.Text.Trim(' ');
-            string _country = tbCountry.Text.Trim(' ');
-            return AcountInfoControl.Instance.ChangeAcount(_id, _name, _dateOfBirth, _sex, _userName, _country, _telephoneNumber);
-        }
-
+      
         private void label1_Click(object sender, EventArgs e)
         {
             /*indexdsa
