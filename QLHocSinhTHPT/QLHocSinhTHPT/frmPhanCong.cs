@@ -634,7 +634,23 @@ namespace QLHocSinhTHPT
 
         private void btnStatistical_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+  private void btnList_ReceiptVou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ListReceipt_Vou info = new ListReceipt_Vou();
+            showFormChild(info);
+        }
 
+        private void btnList_IssueVou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ListIssue_Vou info = new ListIssue_Vou();
+            showFormChild(info);
+        }
+        #region BindingNavigatorItems
+        private void bindingNavigatorExitItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        #endregion
  
 
         
