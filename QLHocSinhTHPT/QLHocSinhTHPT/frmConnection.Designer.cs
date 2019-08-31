@@ -102,6 +102,97 @@
                 // 
                 // labelX2
                 // 
+                this.labelX2.BackColor = System.Drawing.Color.Transparent;
+                this.labelX2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                this.labelX2.Location = new System.Drawing.Point(170, 45);
+                this.labelX2.Name = "labelX2";
+                this.labelX2.Size = new System.Drawing.Size(88, 20);
+                this.labelX2.TabIndex = 0;
+                this.labelX2.Text = "Authentication:";
+                // 
+                // labelX3
+                // 
+                this.labelX3.BackColor = System.Drawing.Color.Transparent;
+                this.labelX3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                this.labelX3.Location = new System.Drawing.Point(170, 90);
+                this.labelX3.Name = "labelX3";
+                this.labelX3.Size = new System.Drawing.Size(88, 20);
+                this.labelX3.TabIndex = 0;
+                this.labelX3.Text = "Username:";
+                // 
+                // labelX4
+                // 
+                this.labelX4.BackColor = System.Drawing.Color.Transparent;
+                this.labelX4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                this.labelX4.Location = new System.Drawing.Point(170, 120);
+                this.labelX4.Name = "labelX4";
+                this.labelX4.Size = new System.Drawing.Size(88, 20);
+                this.labelX4.TabIndex = 0;
+                this.labelX4.Text = "Password:";
+                // 
+                // labelX5
+                // 
+                this.labelX5.BackColor = System.Drawing.Color.Transparent;
+                this.labelX5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                this.labelX5.Location = new System.Drawing.Point(170, 195);
+                this.labelX5.Name = "labelX5";
+                this.labelX5.Size = new System.Drawing.Size(88, 20);
+                this.labelX5.TabIndex = 0;
+                this.labelX5.Text = "Database:";
+                // 
+                // txtServer
+                // 
+                this.txtServer.BackColor = System.Drawing.SystemColors.Window;
+                // 
+                // 
+                // 
+                this.txtServer.Border.Class = "TextBoxBorder";
+                this.txtServer.Location = new System.Drawing.Point(260, 15);
+                this.txtServer.Name = "txtServer";
+                this.txtServer.Size = new System.Drawing.Size(180, 20);
+                this.txtServer.TabIndex = 1;
+                this.txtServer.WatermarkText = "Tên server";
+                // 
+                // cmbAuthentication
+                // 
+                this.cmbAuthentication.DisplayMember = "Text";
+                this.cmbAuthentication.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+                this.cmbAuthentication.FormattingEnabled = true;
+                this.cmbAuthentication.ItemHeight = 14;
+                this.cmbAuthentication.Items.AddRange(new object[] {
+            this.winAuth,
+            this.sqlServerAuth});
+                this.cmbAuthentication.Location = new System.Drawing.Point(260, 45);
+                this.cmbAuthentication.Name = "cmbAuthentication";
+                this.cmbAuthentication.Size = new System.Drawing.Size(180, 20);
+                this.cmbAuthentication.TabIndex = 2;
+                this.cmbAuthentication.SelectedIndexChanged += new System.EventHandler(this.cmbAuthentication_SelectedIndexChanged);
+                // 
+                // winAuth
+                // 
+                this.winAuth.Text = "Windows Authentication";
+                // 
+                // sqlServerAuth
+                // 
+                this.sqlServerAuth.Text = "SQL Server Authentication";
+                // 
+                // txtUsername
+                // 
+                // 
+                // 
+                // 
+                this.txtUsername.Border.Class = "TextBoxBorder";
+                this.txtUsername.Location = new System.Drawing.Point(260, 90);
+                this.txtUsername.Name = "txtUsername";
+                this.txtUsername.Size = new System.Drawing.Size(180, 20);
+                this.txtUsername.TabIndex = 3;
+                this.txtUsername.WatermarkText = "Tên đăng nhập hệ thống";
+                // 
+                // txtPassword
+                // 
+                // 
+                // 
+                // 
             }
 
             #endregion
