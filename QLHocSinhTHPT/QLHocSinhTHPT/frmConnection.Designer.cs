@@ -195,6 +195,67 @@
                 // 
             }
 
+            this.txtPassword.Border.Class = "TextBoxBorder";
+            this.txtPassword.Location = new System.Drawing.Point(260, 120);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '●';
+            this.txtPassword.Size = new System.Drawing.Size(180, 20);
+            this.txtPassword.TabIndex = 4;
+            this.txtPassword.WatermarkText = "Mật khẩu hệ thống";
+            // 
+            // btnTestConnection
+            // 
+            this.btnTestConnection.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnTestConnection.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnTestConnection.Location = new System.Drawing.Point(260, 150);
+            this.btnTestConnection.Name = "btnTestConnection";
+            this.btnTestConnection.Size = new System.Drawing.Size(110, 23);
+            this.btnTestConnection.TabIndex = 5;
+            this.btnTestConnection.Text = "Test Connection";
+            this.btnTestConnection.Click += new System.EventHandler(this.btnTestConnection_Click);
+            // 
+            // cmbDatabase
+            // 
+            this.cmbDatabase.DisplayMember = "Text";
+            this.cmbDatabase.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbDatabase.FormattingEnabled = true;
+            this.cmbDatabase.ItemHeight = 14;
+            this.cmbDatabase.Location = new System.Drawing.Point(260, 195);
+            this.cmbDatabase.Name = "cmbDatabase";
+            this.cmbDatabase.Size = new System.Drawing.Size(180, 20);
+            this.cmbDatabase.TabIndex = 6;
+            // 
+            // btnOK
+            // 
+            this.btnOK.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnOK.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnOK.Location = new System.Drawing.Point(260, 236);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(87, 23);
+            this.btnOK.TabIndex = 7;
+            this.btnOK.Text = "OK";
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnCancel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnCancel.Location = new System.Drawing.Point(353, 236);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(87, 23);
+            this.btnCancel.TabIndex = 8;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // panelLine
+            // 
+            this.panelLine.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelLine.Location = new System.Drawing.Point(170, 225);
+            this.panelLine.Name = "panelLine";
+            this.panelLine.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panelLine.Size = new System.Drawing.Size(270, 1);
+            this.panelLine.TabIndex = 0;
+
             #endregion
         }
 }
