@@ -354,9 +354,63 @@
             this.buttonItemTimKiem.Name = "buttonItemTimKiem";
             this.buttonItemTimKiem.OptionGroup = "navBar";
             this.buttonItemTimKiem.Text = "Tìm kiếm giáo viên";
+            // 
+            // frmTimKiemGV
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1085, 490);
+            this.Controls.Add(this.groupBoxDanhSach);
+            this.Controls.Add(this.navPaneLeft);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmTimKiemGV";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "TÌM KIẾM GIÁO VIÊN";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmTimKiemGV_Load);
+            this.groupBoxDanhSach.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVKetQuaTimKiem)).EndInit();
+            this.navPaneLeft.ResumeLayout(false);
+            this.navPanelTimKiem.ResumeLayout(false);
+            this.navPanelTimKiem.PerformLayout();
+            this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        #region Components
+        private System.Windows.Forms.GroupBox groupBoxDanhSach;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dGVKetQuaTimKiem;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtHoTen;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cmbTheoCMon;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtDiaChi;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cmbTheoDChi;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cmbCMon;
+        private DevComponents.DotNetBar.NavigationPane navPaneLeft;
+        private DevComponents.DotNetBar.NavigationPanePanel navPanelTimKiem;
+        private DevComponents.DotNetBar.ButtonItem buttonItemTimKiem;
+        private DevComponents.DotNetBar.ButtonX btnTimKiem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private DevComponents.Editors.ComboItem col01;
+        private DevComponents.Editors.ComboItem col02;
+        private DevComponents.Editors.ComboItem col03;
+        private DevComponents.Editors.ComboItem col04;
+        private DevComponents.Editors.ComboItem col05;
+        private DevComponents.Editors.ComboItem col06;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaGiaoVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenGiaoVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDienThoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenMonHoc;
+        #endregion
     }
+
+#endregion
+}
 }
