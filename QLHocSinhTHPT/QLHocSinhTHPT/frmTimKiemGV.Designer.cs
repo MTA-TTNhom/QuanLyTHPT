@@ -206,6 +206,155 @@
             this.navPanelTimKiem.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.navPanelTimKiem.Style.GradientAngle = 90;
             this.navPanelTimKiem.TabIndex = 1;
+            // 
+            // cmbCMon
+            // 
+            this.cmbCMon.DisplayMember = "Text";
+            this.cmbCMon.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbCMon.FormattingEnabled = true;
+            this.cmbCMon.ItemHeight = 14;
+            this.cmbCMon.Location = new System.Drawing.Point(15, 166);
+            this.cmbCMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCMon.Name = "cmbCMon";
+            this.cmbCMon.Size = new System.Drawing.Size(212, 20);
+            this.cmbCMon.TabIndex = 5;
+            // 
+            // cmbTheoCMon
+            // 
+            this.cmbTheoCMon.DisplayMember = "Text";
+            this.cmbTheoCMon.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbTheoCMon.FormattingEnabled = true;
+            this.cmbTheoCMon.ItemHeight = 14;
+            this.cmbTheoCMon.Items.AddRange(new object[] {
+            this.col04,
+            this.col05,
+            this.col06});
+            this.cmbTheoCMon.Location = new System.Drawing.Point(15, 135);
+            this.cmbTheoCMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTheoCMon.Name = "cmbTheoCMon";
+            this.cmbTheoCMon.Size = new System.Drawing.Size(71, 20);
+            this.cmbTheoCMon.TabIndex = 4;
+            this.cmbTheoCMon.Text = "NONE";
+            // 
+            // col04
+            // 
+            this.col04.Text = "NONE";
+            // 
+            // col05
+            // 
+            this.col05.Text = "AND";
+            // 
+            // col06
+            // 
+            this.col06.Text = "OR";
+            // 
+            // cmbTheoDChi
+            // 
+            this.cmbTheoDChi.DisplayMember = "Text";
+            this.cmbTheoDChi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbTheoDChi.FormattingEnabled = true;
+            this.cmbTheoDChi.ItemHeight = 14;
+            this.cmbTheoDChi.Items.AddRange(new object[] {
+            this.col01,
+            this.col02,
+            this.col03});
+            this.cmbTheoDChi.Location = new System.Drawing.Point(15, 68);
+            this.cmbTheoDChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTheoDChi.Name = "cmbTheoDChi";
+            this.cmbTheoDChi.Size = new System.Drawing.Size(71, 20);
+            this.cmbTheoDChi.TabIndex = 2;
+            this.cmbTheoDChi.Text = "NONE";
+            // 
+            // col01
+            // 
+            this.col01.Text = "NONE";
+            // 
+            // col02
+            // 
+            this.col02.Text = "AND";
+            // 
+            // col03
+            // 
+            this.col03.Text = "OR";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(93, 140);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Chuyên môn:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(93, 73);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Địa chỉ:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Họ và tên:";
+            // 
+            // txtDiaChi
+            // 
+            // 
+            // 
+            // 
+            this.txtDiaChi.Border.Class = "TextBoxBorder";
+            this.txtDiaChi.Location = new System.Drawing.Point(15, 98);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiaChi.MaxLength = 50;
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(213, 22);
+            this.txtDiaChi.TabIndex = 3;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnTimKiem.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btnTimKiem.Location = new System.Drawing.Point(15, 203);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(213, 28);
+            this.btnTimKiem.TabIndex = 6;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // txtHoTen
+            // 
+            // 
+            // 
+            // 
+            this.txtHoTen.Border.Class = "TextBoxBorder";
+            this.txtHoTen.Location = new System.Drawing.Point(15, 31);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHoTen.MaxLength = 30;
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(213, 22);
+            this.txtHoTen.TabIndex = 1;
+            // 
+            // buttonItemTimKiem
+            // 
+            this.buttonItemTimKiem.Checked = true;
+            this.buttonItemTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("buttonItemTimKiem.Image")));
+            this.buttonItemTimKiem.ImageFixedSize = new System.Drawing.Size(16, 16);
+            this.buttonItemTimKiem.ImagePaddingHorizontal = 8;
+            this.buttonItemTimKiem.Name = "buttonItemTimKiem";
+            this.buttonItemTimKiem.OptionGroup = "navBar";
+            this.buttonItemTimKiem.Text = "Tìm kiếm giáo viên";
+
         }
 
         #endregion
