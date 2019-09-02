@@ -12,9 +12,15 @@ namespace QLHocSinhTHPT
 {
     public partial class frmHocSinh : Form
     {
-        public frmHocSinh()
-        {
-            InitializeComponent();
-        }
+        #region Fields
+        HocSinhCtrl m_HocSinhCtrl = new HocSinhCtrl();
+        DanTocCtrl m_DanTocCtrl = new DanTocCtrl();
+        TonGiaoCtrl m_TonGiaoCtrl = new TonGiaoCtrl();
+        NgheNghiepCtrl m_NgheNghiepChaCtrl = new NgheNghiepCtrl();
+        NgheNghiepCtrl m_NgheNghiepMeCtrl = new NgheNghiepCtrl();
+        QuyDinh quyDinh = new QuyDinh();
+        #endregion
+
+
     }
 }
