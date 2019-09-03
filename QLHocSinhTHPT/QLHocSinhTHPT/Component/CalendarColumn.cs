@@ -106,4 +106,39 @@ namespace QLHocSinhTHPT.Component
             get { return rowIndex; }
             set { rowIndex = value; }
         }
+
+        public bool EditingControlWantsInputKey(Keys key, bool dataGridViewWantsInputKey)
+        {
+            switch (key & Keys.KeyCode)
+            {
+                case Keys.Left:
+                case Keys.Up:
+                case Keys.Down:
+                case Keys.Right:
+                case Keys.Home:
+                case Keys.End:
+                case Keys.PageDown:
+                case Keys.PageUp:
+                    return true;
+                default:
+                    return false;
+            }
+        }
+
+        public void PrepareEditingControlForEdit(bool selectAll)
+        {
+            //No preparation needs to be done.
+        }
+
+        public bool RepositionEditingControlOnValueChange
+        {
+            get { return false; }
+        }
+
+        public DataGridView EditingControlDataGridView
+        {
+            get { return dataGridView; }
+            set { dataGridView = value; }
+        }
+
     }
