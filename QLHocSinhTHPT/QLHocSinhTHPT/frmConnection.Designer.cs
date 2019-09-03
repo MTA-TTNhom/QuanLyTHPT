@@ -257,5 +257,63 @@
             this.panelLine.TabIndex = 0;
 
             #endregion
+
+            // 
+            // frmConnection
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(454, 268);
+            this.Controls.Add(this.panelLine);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.btnTestConnection);
+            this.Controls.Add(this.cmbDatabase);
+            this.Controls.Add(this.cmbAuthentication);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtServer);
+            this.Controls.Add(this.labelX5);
+            this.Controls.Add(this.labelX4);
+            this.Controls.Add(this.labelX3);
+            this.Controls.Add(this.labelX2);
+            this.Controls.Add(this.labelX1);
+            this.Controls.Add(this.groupPanelLeft);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmConnection";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "KẾT NỐI CƠ SỞ DỮ LIỆU SQL SERVER";
+            this.Load += new System.EventHandler(this.frmConnection_Load);
+            this.groupPanelLeft.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+#endregion
+
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanelLeft;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.LabelX labelX4;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtServer;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtUsername;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtPassword;
+        private DevComponents.DotNetBar.ButtonX btnTestConnection;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cmbDatabase;
+        private DevComponents.DotNetBar.ButtonX btnOK;
+        private DevComponents.DotNetBar.ButtonX btnCancel;
+        private System.Windows.Forms.Panel panelLine;
+        private DevComponents.DotNetBar.Controls.ReflectionImage reflectionImage;
+        private DevComponents.Editors.ComboItem winAuth;
+        private DevComponents.Editors.ComboItem sqlServerAuth;
+        public DevComponents.DotNetBar.Controls.ComboBoxEx cmbAuthentication;
+
+    }
+}
         }
 }
