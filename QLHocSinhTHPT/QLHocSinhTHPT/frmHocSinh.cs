@@ -21,6 +21,12 @@ namespace QLHocSinhTHPT
         QuyDinh quyDinh = new QuyDinh();
         #endregion
 
-
+        #region Constructor
+        public frmHocSinh()
+        {
+            InitializeComponent();
+            DataService.OpenConnection();
+        }
+        #endregion
     }
 }
