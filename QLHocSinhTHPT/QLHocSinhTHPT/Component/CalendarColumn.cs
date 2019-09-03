@@ -89,5 +89,21 @@ namespace QLHocSinhTHPT.Component
             }
         }
 
+        public object GetEditingControlFormattedValue(DataGridViewDataErrorContexts context)
+        {
+            return EditingControlFormattedValue;
+        }
 
+        public void ApplyCellStyleToEditingControl(DataGridViewCellStyle dataGridViewCellStyle)
+        {
+            this.Font = dataGridViewCellStyle.Font;
+            this.CalendarForeColor = dataGridViewCellStyle.ForeColor;
+            this.CalendarMonthBackground = dataGridViewCellStyle.BackColor;
+        }
+
+        public int EditingControlRowIndex
+        {
+            get { return rowIndex; }
+            set { rowIndex = value; }
+        }
     }
