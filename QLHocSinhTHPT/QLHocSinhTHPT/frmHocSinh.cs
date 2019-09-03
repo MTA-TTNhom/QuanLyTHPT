@@ -28,5 +28,22 @@ namespace QLHocSinhTHPT
             DataService.OpenConnection();
         }
         #endregion
+
+        #region Load
+        private void frmHocSinh_Load(object sender, EventArgs e)
+        {
+            m_DanTocCtrl.HienThiComboBox(cmbDanToc);
+            m_TonGiaoCtrl.HienThiComboBox(cmbTonGiao);
+            m_NgheNghiepChaCtrl.HienThiComboBox(cmbNgheNghiepCha);
+            m_NgheNghiepMeCtrl.HienThiComboBox(cmbNgheNghiepMe);
+
+            m_DanTocCtrl.HienThiDataGridViewComboBoxColumn(colMaDanToc);
+            m_TonGiaoCtrl.HienThiDataGridViewComboBoxColumn(colMaTonGiao);
+            m_NgheNghiepChaCtrl.HienThiDataGridViewComboBoxColumnNNCha(colMaNNghiepCha);
+            m_NgheNghiepMeCtrl.HienThiDataGridViewComboBoxColumnNNMe(colMaNNghiepMe);
+
+            m_HocSinhCtrl.HienThi(dGVHocSinh, bindingNavigatorHocSinh, txtMaHocSinh, txtTenHocSinh, txtGioiTinh, ckbGTinhNam, ckbGTinhNu, dtpNgaySinh, txtNoiSinh, cmbDanToc, cmbTonGiao, txtHoTenCha, cmbNgheNghiepCha, txtHoTenMe, cmbNgheNghiepMe);
+        }
+        #endregion
     }
 }
