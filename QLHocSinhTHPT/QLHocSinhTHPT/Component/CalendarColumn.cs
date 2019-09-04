@@ -141,4 +141,23 @@ namespace QLHocSinhTHPT.Component
             set { dataGridView = value; }
         }
 
+        public bool EditingControlValueChanged
+        {
+            get { return valueChanged; }
+            set { valueChanged = value; }
+        }
+
+        public Cursor EditingPanelCursor
+        {
+            get { return base.Cursor; }
+        }
+
+        protected override void OnValueChanged(EventArgs eventargs)
+        {
+            valueChanged = true;
+            this.EditingControlDataGridView.NotifyCurrentCellDirty(true);
+            base.OnValueChanged(eventargs);
+        }
     }
+    #endregion
+}
