@@ -571,6 +571,117 @@
             this.label02.Size = new System.Drawing.Size(88, 17);
             this.label02.TabIndex = 0;
             this.label02.Text = "Mã học sinh:";
+            // 
+            // label04
+            // 
+            this.label04.AutoSize = true;
+            this.label04.Location = new System.Drawing.Point(11, 123);
+            this.label04.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label04.Name = "label04";
+            this.label04.Size = new System.Drawing.Size(64, 17);
+            this.label04.TabIndex = 0;
+            this.label04.Text = "Giới tính:";
+            // 
+            // cmbNgheNghiepMe
+            // 
+            this.cmbNgheNghiepMe.DisplayMember = "Text";
+            this.cmbNgheNghiepMe.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbNgheNghiepMe.FormattingEnabled = true;
+            this.cmbNgheNghiepMe.ItemHeight = 14;
+            this.cmbNgheNghiepMe.Location = new System.Drawing.Point(15, 585);
+            this.cmbNgheNghiepMe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbNgheNghiepMe.Name = "cmbNgheNghiepMe";
+            this.cmbNgheNghiepMe.Size = new System.Drawing.Size(132, 20);
+            this.cmbNgheNghiepMe.TabIndex = 15;
+            // 
+            // cmbNgheNghiepCha
+            // 
+            this.cmbNgheNghiepCha.DisplayMember = "Text";
+            this.cmbNgheNghiepCha.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbNgheNghiepCha.FormattingEnabled = true;
+            this.cmbNgheNghiepCha.ItemHeight = 14;
+            this.cmbNgheNghiepCha.Location = new System.Drawing.Point(15, 474);
+            this.cmbNgheNghiepCha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbNgheNghiepCha.Name = "cmbNgheNghiepCha";
+            this.cmbNgheNghiepCha.Size = new System.Drawing.Size(132, 20);
+            this.cmbNgheNghiepCha.TabIndex = 12;
+            // 
+            // cmbDanToc
+            // 
+            this.cmbDanToc.DisplayMember = "Text";
+            this.cmbDanToc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbDanToc.FormattingEnabled = true;
+            this.cmbDanToc.ItemHeight = 14;
+            this.cmbDanToc.Location = new System.Drawing.Point(15, 308);
+            this.cmbDanToc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbDanToc.Name = "cmbDanToc";
+            this.cmbDanToc.Size = new System.Drawing.Size(132, 20);
+            this.cmbDanToc.TabIndex = 7;
+            // 
+            // cmbTonGiao
+            // 
+            this.cmbTonGiao.DisplayMember = "Text";
+            this.cmbTonGiao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbTonGiao.FormattingEnabled = true;
+            this.cmbTonGiao.ItemHeight = 14;
+            this.cmbTonGiao.Location = new System.Drawing.Point(15, 363);
+            this.cmbTonGiao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTonGiao.Name = "cmbTonGiao";
+            this.cmbTonGiao.Size = new System.Drawing.Size(132, 20);
+            this.cmbTonGiao.TabIndex = 9;
+            // 
+            // label03
+            // 
+            this.label03.AutoSize = true;
+            this.label03.Location = new System.Drawing.Point(11, 68);
+            this.label03.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label03.Name = "label03";
+            this.label03.Size = new System.Drawing.Size(94, 17);
+            this.label03.TabIndex = 0;
+            this.label03.Text = "Tên học sinh:";
+            // 
+            // txtMaHocSinh
+            // 
+            // 
+            // 
+            // 
+            this.txtMaHocSinh.Border.Class = "TextBoxBorder";
+            this.txtMaHocSinh.Location = new System.Drawing.Point(15, 31);
+            this.txtMaHocSinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaHocSinh.MaxLength = 6;
+            this.txtMaHocSinh.Name = "txtMaHocSinh";
+            this.txtMaHocSinh.Size = new System.Drawing.Size(133, 22);
+            this.txtMaHocSinh.TabIndex = 2;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(11, 566);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(116, 17);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Nghề nghiệp mẹ:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(11, 455);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(120, 17);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Nghề nghiệp cha:";
+            // 
+            // label08
+            // 
+            this.label08.AutoSize = true;
+            this.label08.Location = new System.Drawing.Point(11, 345);
+            this.label08.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label08.Name = "label08";
+            this.label08.Size = new System.Drawing.Size(68, 17);
+            this.label08.TabIndex = 0;
+            this.label08.Text = "Tôn giáo:";
         }
 
         #endregion
