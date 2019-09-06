@@ -395,6 +395,182 @@
             this.navPanelNhapDuLieu.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.navPanelNhapDuLieu.Style.GradientAngle = 90;
             this.navPanelNhapDuLieu.TabIndex = 1;
+            // 
+            // groupPanelGioiTinh
+            // 
+            this.groupPanelGioiTinh.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanelGioiTinh.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanelGioiTinh.Controls.Add(this.ckbGTinhNam);
+            this.groupPanelGioiTinh.Controls.Add(this.ckbGTinhNu);
+            this.groupPanelGioiTinh.Location = new System.Drawing.Point(15, 142);
+            this.groupPanelGioiTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupPanelGioiTinh.Name = "groupPanelGioiTinh";
+            this.groupPanelGioiTinh.Size = new System.Drawing.Size(213, 30);
+            // 
+            // 
+            // 
+            this.groupPanelGioiTinh.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanelGioiTinh.Style.BackColorGradientAngle = 90;
+            this.groupPanelGioiTinh.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanelGioiTinh.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanelGioiTinh.Style.BorderBottomWidth = 1;
+            this.groupPanelGioiTinh.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanelGioiTinh.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanelGioiTinh.Style.BorderLeftWidth = 1;
+            this.groupPanelGioiTinh.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanelGioiTinh.Style.BorderRightWidth = 1;
+            this.groupPanelGioiTinh.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanelGioiTinh.Style.BorderTopWidth = 1;
+            this.groupPanelGioiTinh.Style.CornerDiameter = 4;
+            this.groupPanelGioiTinh.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanelGioiTinh.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanelGioiTinh.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanelGioiTinh.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            this.groupPanelGioiTinh.TabIndex = 4;
+            // 
+            // ckbGTinhNam
+            // 
+            this.ckbGTinhNam.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.ckbGTinhNam.Location = new System.Drawing.Point(3, 0);
+            this.ckbGTinhNam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbGTinhNam.Name = "ckbGTinhNam";
+            this.ckbGTinhNam.Size = new System.Drawing.Size(80, 22);
+            this.ckbGTinhNam.TabIndex = 1;
+            this.ckbGTinhNam.Text = "Nam";
+            // 
+            // ckbGTinhNu
+            // 
+            this.ckbGTinhNu.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.ckbGTinhNu.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.ckbGTinhNu.Location = new System.Drawing.Point(96, 0);
+            this.ckbGTinhNu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbGTinhNu.Name = "ckbGTinhNu";
+            this.ckbGTinhNu.Size = new System.Drawing.Size(80, 22);
+            this.ckbGTinhNu.TabIndex = 2;
+            this.ckbGTinhNu.Text = "Nữ";
+            // 
+            // lblBuffer
+            // 
+            this.lblBuffer.AutoSize = true;
+            this.lblBuffer.Enabled = false;
+            this.lblBuffer.Location = new System.Drawing.Point(11, 650);
+            this.lblBuffer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBuffer.Name = "lblBuffer";
+            this.lblBuffer.Size = new System.Drawing.Size(0, 17);
+            this.lblBuffer.TabIndex = 0;
+            // 
+            // dtpNgaySinh
+            // 
+            // 
+            // 
+            // 
+            this.dtpNgaySinh.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dtpNgaySinh.ButtonDropDown.Visible = true;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(15, 197);
+            this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNgaySinh.MaxDate = new System.DateTime(2050, 12, 31, 0, 0, 0, 0);
+            this.dtpNgaySinh.MinDate = new System.DateTime(1980, 1, 1, 0, 0, 0, 0);
+            // 
+            // 
+            // 
+            this.dtpNgaySinh.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.dtpNgaySinh.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.dtpNgaySinh.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.dtpNgaySinh.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.dtpNgaySinh.MonthCalendar.DisplayMonth = new System.DateTime(2008, 11, 1, 0, 0, 0, 0);
+            this.dtpNgaySinh.MonthCalendar.MarkedDates = new System.DateTime[0];
+            this.dtpNgaySinh.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
+            // 
+            // 
+            // 
+            this.dtpNgaySinh.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.dtpNgaySinh.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.dtpNgaySinh.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.dtpNgaySinh.MonthCalendar.TodayButtonVisible = true;
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(133, 22);
+            this.dtpNgaySinh.TabIndex = 5;
+            // 
+            // btnLuuVaoDS
+            // 
+            this.btnLuuVaoDS.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnLuuVaoDS.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btnLuuVaoDS.Location = new System.Drawing.Point(13, 622);
+            this.btnLuuVaoDS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLuuVaoDS.Name = "btnLuuVaoDS";
+            this.btnLuuVaoDS.Size = new System.Drawing.Size(213, 28);
+            this.btnLuuVaoDS.TabIndex = 17;
+            this.btnLuuVaoDS.Text = "Lưu vào danh sách";
+            this.btnLuuVaoDS.Click += new System.EventHandler(this.btnLuuVaoDS_Click);
+            // 
+            // btnThemNNMe
+            // 
+            this.btnThemNNMe.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThemNNMe.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThemNNMe.Image = global::QLHocSinhTHPT.Properties.Resources.add;
+            this.btnThemNNMe.Location = new System.Drawing.Point(155, 585);
+            this.btnThemNNMe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemNNMe.Name = "btnThemNNMe";
+            this.btnThemNNMe.Size = new System.Drawing.Size(27, 25);
+            this.btnThemNNMe.TabIndex = 16;
+            this.btnThemNNMe.Click += new System.EventHandler(this.btnThemNNMe_Click);
+            // 
+            // btnThemNNCha
+            // 
+            this.btnThemNNCha.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThemNNCha.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThemNNCha.Image = global::QLHocSinhTHPT.Properties.Resources.add;
+            this.btnThemNNCha.Location = new System.Drawing.Point(155, 474);
+            this.btnThemNNCha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemNNCha.Name = "btnThemNNCha";
+            this.btnThemNNCha.Size = new System.Drawing.Size(27, 25);
+            this.btnThemNNCha.TabIndex = 13;
+            this.btnThemNNCha.Click += new System.EventHandler(this.btnThemNNCha_Click);
+            // 
+            // btnThemDanToc
+            // 
+            this.btnThemDanToc.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThemDanToc.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThemDanToc.Image = global::QLHocSinhTHPT.Properties.Resources.add;
+            this.btnThemDanToc.Location = new System.Drawing.Point(155, 308);
+            this.btnThemDanToc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemDanToc.Name = "btnThemDanToc";
+            this.btnThemDanToc.Size = new System.Drawing.Size(27, 25);
+            this.btnThemDanToc.TabIndex = 8;
+            this.btnThemDanToc.Click += new System.EventHandler(this.btnThemDanToc_Click);
+            // 
+            // btnThemTonGiao
+            // 
+            this.btnThemTonGiao.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThemTonGiao.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThemTonGiao.Image = global::QLHocSinhTHPT.Properties.Resources.add;
+            this.btnThemTonGiao.Location = new System.Drawing.Point(155, 363);
+            this.btnThemTonGiao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemTonGiao.Name = "btnThemTonGiao";
+            this.btnThemTonGiao.Size = new System.Drawing.Size(27, 25);
+            this.btnThemTonGiao.TabIndex = 10;
+            this.btnThemTonGiao.Click += new System.EventHandler(this.btnThemTonGiao_Click);
+            // 
+            // label02
+            // 
+            this.label02.AutoSize = true;
+            this.label02.Location = new System.Drawing.Point(11, 12);
+            this.label02.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label02.Name = "label02";
+            this.label02.Size = new System.Drawing.Size(88, 17);
+            this.label02.TabIndex = 0;
+            this.label02.Text = "Mã học sinh:";
         }
 
         #endregion
