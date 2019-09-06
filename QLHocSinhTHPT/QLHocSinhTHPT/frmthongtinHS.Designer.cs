@@ -682,6 +682,240 @@
             this.label08.Size = new System.Drawing.Size(68, 17);
             this.label08.TabIndex = 0;
             this.label08.Text = "Tôn giáo:";
+            // 
+            // label06
+            // 
+            this.label06.AutoSize = true;
+            this.label06.Location = new System.Drawing.Point(11, 234);
+            this.label06.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label06.Name = "label06";
+            this.label06.Size = new System.Drawing.Size(63, 17);
+            this.label06.TabIndex = 0;
+            this.label06.Text = "Nơi sinh:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(11, 511);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(77, 17);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Họ tên mẹ:";
+            // 
+            // label09
+            // 
+            this.label09.AutoSize = true;
+            this.label09.Location = new System.Drawing.Point(11, 400);
+            this.label09.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label09.Name = "label09";
+            this.label09.Size = new System.Drawing.Size(81, 17);
+            this.label09.TabIndex = 0;
+            this.label09.Text = "Họ tên cha:";
+            // 
+            // txtHoTenMe
+            // 
+            // 
+            // 
+            // 
+            this.txtHoTenMe.Border.Class = "TextBoxBorder";
+            this.txtHoTenMe.Location = new System.Drawing.Point(15, 529);
+            this.txtHoTenMe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHoTenMe.MaxLength = 30;
+            this.txtHoTenMe.Name = "txtHoTenMe";
+            this.txtHoTenMe.Size = new System.Drawing.Size(213, 22);
+            this.txtHoTenMe.TabIndex = 14;
+            // 
+            // label07
+            // 
+            this.label07.AutoSize = true;
+            this.label07.Location = new System.Drawing.Point(11, 289);
+            this.label07.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label07.Name = "label07";
+            this.label07.Size = new System.Drawing.Size(61, 17);
+            this.label07.TabIndex = 0;
+            this.label07.Text = "Dân tộc:";
+            // 
+            // txtHoTenCha
+            // 
+            // 
+            // 
+            // 
+            this.txtHoTenCha.Border.Class = "TextBoxBorder";
+            this.txtHoTenCha.Location = new System.Drawing.Point(15, 418);
+            this.txtHoTenCha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHoTenCha.MaxLength = 30;
+            this.txtHoTenCha.Name = "txtHoTenCha";
+            this.txtHoTenCha.Size = new System.Drawing.Size(213, 22);
+            this.txtHoTenCha.TabIndex = 11;
+            // 
+            // label05
+            // 
+            this.label05.AutoSize = true;
+            this.label05.Location = new System.Drawing.Point(11, 178);
+            this.label05.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label05.Name = "label05";
+            this.label05.Size = new System.Drawing.Size(75, 17);
+            this.label05.TabIndex = 0;
+            this.label05.Text = "Ngày sinh:";
+            // 
+            // txtNoiSinh
+            // 
+            // 
+            // 
+            // 
+            this.txtNoiSinh.Border.Class = "TextBoxBorder";
+            this.txtNoiSinh.Location = new System.Drawing.Point(15, 252);
+            this.txtNoiSinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNoiSinh.MaxLength = 50;
+            this.txtNoiSinh.Name = "txtNoiSinh";
+            this.txtNoiSinh.Size = new System.Drawing.Size(133, 22);
+            this.txtNoiSinh.TabIndex = 6;
+            // 
+            // txtTenHocSinh
+            // 
+            // 
+            // 
+            // 
+            this.txtTenHocSinh.Border.Class = "TextBoxBorder";
+            this.txtTenHocSinh.Location = new System.Drawing.Point(15, 86);
+            this.txtTenHocSinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenHocSinh.MaxLength = 30;
+            this.txtTenHocSinh.Name = "txtTenHocSinh";
+            this.txtTenHocSinh.Size = new System.Drawing.Size(213, 22);
+            this.txtTenHocSinh.TabIndex = 3;
+            // 
+            // txtGioiTinh
+            // 
+            // 
+            // 
+            // 
+            this.txtGioiTinh.Border.Class = "TextBoxBorder";
+            this.txtGioiTinh.Location = new System.Drawing.Point(76, 31);
+            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGioiTinh.Name = "txtGioiTinh";
+            this.txtGioiTinh.ReadOnly = true;
+            this.txtGioiTinh.Size = new System.Drawing.Size(72, 22);
+            this.txtGioiTinh.TabIndex = 20;
+            // 
+            // buttonItemNhapDuLieu
+            // 
+            this.buttonItemNhapDuLieu.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItemNhapDuLieu.Checked = true;
+            this.buttonItemNhapDuLieu.Image = ((System.Drawing.Image)(resources.GetObject("buttonItemNhapDuLieu.Image")));
+            this.buttonItemNhapDuLieu.ImagePaddingHorizontal = 8;
+            this.buttonItemNhapDuLieu.Name = "buttonItemNhapDuLieu";
+            this.buttonItemNhapDuLieu.OptionGroup = "navBar";
+            this.buttonItemNhapDuLieu.Text = "Nhập liệu thông tin";
+            // 
+            // navPanelTimKiem
+            // 
+            this.navPanelTimKiem.AutoScroll = true;
+            this.navPanelTimKiem.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.navPanelTimKiem.Controls.Add(this.label01);
+            this.navPanelTimKiem.Controls.Add(this.chkTimTheoTen);
+            this.navPanelTimKiem.Controls.Add(this.chkTimTheoMa);
+            this.navPanelTimKiem.Controls.Add(this.btnTimKiem);
+            this.navPanelTimKiem.Controls.Add(this.txtTimKiem);
+            this.navPanelTimKiem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.navPanelTimKiem.Location = new System.Drawing.Point(1, 1);
+            this.navPanelTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.navPanelTimKiem.Name = "navPanelTimKiem";
+            this.navPanelTimKiem.ParentItem = this.buttonItemTimKiem;
+            this.navPanelTimKiem.Size = new System.Drawing.Size(258, 506);
+            this.navPanelTimKiem.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.navPanelTimKiem.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.navPanelTimKiem.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.navPanelTimKiem.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.navPanelTimKiem.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
+            this.navPanelTimKiem.Style.GradientAngle = 90;
+            this.navPanelTimKiem.TabIndex = 2;
+            // 
+            // label01
+            // 
+            this.label01.AutoSize = true;
+            this.label01.Location = new System.Drawing.Point(11, 12);
+            this.label01.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label01.Name = "label01";
+            this.label01.Size = new System.Drawing.Size(160, 17);
+            this.label01.TabIndex = 0;
+            this.label01.Text = "Nhập thông tin tìm kiếm:";
+            // 
+            // chkTimTheoTen
+            // 
+            this.chkTimTheoTen.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.chkTimTheoTen.Location = new System.Drawing.Point(11, 92);
+            this.chkTimTheoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkTimTheoTen.Name = "chkTimTheoTen";
+            this.chkTimTheoTen.Size = new System.Drawing.Size(217, 28);
+            this.chkTimTheoTen.TabIndex = 5;
+            this.chkTimTheoTen.Text = "Tìm theo tên học sinh";
+            // 
+            // chkTimTheoMa
+            // 
+            this.chkTimTheoMa.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.chkTimTheoMa.Checked = true;
+            this.chkTimTheoMa.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkTimTheoMa.CheckValue = "Y";
+            this.chkTimTheoMa.Location = new System.Drawing.Point(11, 62);
+            this.chkTimTheoMa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkTimTheoMa.Name = "chkTimTheoMa";
+            this.chkTimTheoMa.Size = new System.Drawing.Size(217, 28);
+            this.chkTimTheoMa.TabIndex = 4;
+            this.chkTimTheoMa.Text = "Tìm theo mã học sinh";
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnTimKiem.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btnTimKiem.Location = new System.Drawing.Point(15, 129);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(227, 28);
+            this.btnTimKiem.TabIndex = 6;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // txtTimKiem
+            // 
+            // 
+            // 
+            // 
+            this.txtTimKiem.Border.Class = "TextBoxBorder";
+            this.txtTimKiem.Location = new System.Drawing.Point(15, 31);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(227, 22);
+            this.txtTimKiem.TabIndex = 3;
+            this.txtTimKiem.WatermarkText = "Nhập thông tin cần tìm vào đây";
+            this.txtTimKiem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTimKiem_KeyDown);
+            // 
+            // buttonItemTimKiem
+            // 
+            this.buttonItemTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("buttonItemTimKiem.Image")));
+            this.buttonItemTimKiem.ImageFixedSize = new System.Drawing.Size(16, 16);
+            this.buttonItemTimKiem.ImagePaddingHorizontal = 8;
+            this.buttonItemTimKiem.Name = "buttonItemTimKiem";
+            this.buttonItemTimKiem.OptionGroup = "navBar";
+            this.buttonItemTimKiem.Text = "Tìm kiếm thông tin";
+            // 
+            // bindingNavigatorHocSinh
+            // 
+            this.bindingNavigatorHocSinh.AddNewItem = null;
+            this.bindingNavigatorHocSinh.AutoSize = false;
+            this.bindingNavigatorHocSinh.CountItem = null;
+            this.bindingNavigatorHocSinh.CountItemFormat = "của {0}";
+            this.bindingNavigatorHocSinh.DeleteItem = null;
+            this.bindingNavigatorHocSinh.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.bindingNavigatorHocSinh.Location = new System.Drawing.Point(4, 19);
+            this.bindingNavigatorHocSinh.MoveFirstItem = null;
+            this.bindingNavigatorHocSinh.MoveLastItem = null;
+            this.bindingNavigatorHocSinh.MoveNextItem = null;
+            this.bindingNavigatorHocSinh.MovePreviousItem = null;
+            this.bindingNavigatorHocSinh.Name = "bindingNavigatorHocSinh";
+            this.bindingNavigatorHocSinh.PositionItem = null;
+            this.bindingNavigatorHocSinh.Size = new System.Drawing.Size(724, 43);
+            this.bindingNavigatorHocSinh.TabIndex = 4;
         }
 
         #endregion
