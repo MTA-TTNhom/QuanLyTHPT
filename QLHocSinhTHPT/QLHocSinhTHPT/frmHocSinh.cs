@@ -114,5 +114,12 @@ namespace QLHocSinhTHPT
             }
         }
         #endregion
+
+        #region DataError event
+        private void dGVHocSinh_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            e.Cancel = true;
+        }
+        #endregion
     }
 }
