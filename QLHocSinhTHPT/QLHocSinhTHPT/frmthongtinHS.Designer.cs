@@ -916,8 +916,105 @@
             this.bindingNavigatorHocSinh.PositionItem = null;
             this.bindingNavigatorHocSinh.Size = new System.Drawing.Size(724, 43);
             this.bindingNavigatorHocSinh.TabIndex = 4;
+            // 
+            // frmHocSinh
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(992, 576);
+            this.ctxMenu.SetContextMenuEx(this, this.btnMenu);
+            this.Controls.Add(this.groupBoxDanhSach);
+            this.Controls.Add(this.navPaneLeft);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmHocSinh";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "HỌC SINH";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmHocSinh_Load);
+            this.groupBoxDanhSach.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ctxMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVHocSinh)).EndInit();
+            this.navPaneLeft.ResumeLayout(false);
+            this.navPanelNhapDuLieu.ResumeLayout(false);
+            this.navPanelNhapDuLieu.PerformLayout();
+            this.groupPanelGioiTinh.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtpNgaySinh)).EndInit();
+            this.navPanelTimKiem.ResumeLayout(false);
+            this.navPanelTimKiem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigatorHocSinh)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        #region Components
+        private System.Windows.Forms.GroupBox groupBoxDanhSach;
+        private DevComponents.DotNetBar.ContextMenuBar ctxMenu;
+        private DevComponents.DotNetBar.ButtonItem btnMenu;
+        private DevComponents.DotNetBar.ButtonItem btnAdd;
+        private DevComponents.DotNetBar.ButtonItem btnDelete;
+        private DevComponents.DotNetBar.ButtonItem btnSave;
+        private DevComponents.DotNetBar.ButtonItem btnClose;
+        private DevComponents.DotNetBar.NavigationPane navPaneLeft;
+        private DevComponents.DotNetBar.NavigationPanePanel navPanelNhapDuLieu;
+        private DevComponents.DotNetBar.ButtonItem buttonItemNhapDuLieu;
+        private DevComponents.DotNetBar.NavigationPanePanel navPanelTimKiem;
+        private DevComponents.DotNetBar.ButtonItem buttonItemTimKiem;
+        private DevComponents.DotNetBar.ButtonX btnTimKiem;
+        private DevComponents.DotNetBar.ButtonX btnLuuVaoDS;
+        private DevComponents.DotNetBar.ButtonItem btnRefesh;
+        private DevComponents.DotNetBar.ButtonX btnThemNNCha;
+        private DevComponents.DotNetBar.ButtonX btnThemTonGiao;
+        private DevComponents.DotNetBar.ButtonX btnThemNNMe;
+        private DevComponents.DotNetBar.ButtonX btnThemDanToc;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dGVHocSinh;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtMaHocSinh;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTenHocSinh;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTimKiem;
+        private DevComponents.DotNetBar.Controls.CheckBoxX chkTimTheoTen;
+        private DevComponents.DotNetBar.Controls.CheckBoxX chkTimTheoMa;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtHoTenCha;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cmbNgheNghiepMe;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtHoTenMe;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtNoiSinh;
+        private DevComponents.DotNetBar.Controls.CheckBoxX ckbGTinhNu;
+        private DevComponents.DotNetBar.Controls.CheckBoxX ckbGTinhNam;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanelGioiTinh;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtGioiTinh;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cmbDanToc;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cmbNgheNghiepCha;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cmbTonGiao;
+        private System.Windows.Forms.Label label02;
+        private System.Windows.Forms.Label label06;
+        private System.Windows.Forms.Label label05;
+        private System.Windows.Forms.Label label03;
+        private System.Windows.Forms.Label label04;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label09;
+        private System.Windows.Forms.Label label08;
+        private System.Windows.Forms.Label label07;
+        private System.Windows.Forms.Label lblBuffer;
+        private System.Windows.Forms.Label label01;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaHocSinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHoTen;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn colGioiTinh;
+        private QLHocSinhTHPT.Component.CalendarColumn colNgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNoiSinh;
+        private System.Windows.Forms.DataGridViewComboBoxColumn colMaDanToc;
+        private System.Windows.Forms.DataGridViewComboBoxColumn colMaTonGiao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHoTenCha;
+        private System.Windows.Forms.DataGridViewComboBoxColumn colMaNNghiepCha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHoTenMe;
+        private System.Windows.Forms.DataGridViewComboBoxColumn colMaNNghiepMe;
+        private DevComponents.Editors.DateTimeAdv.DateTimeInput dtpNgaySinh;
+        #endregion
+
+        private System.Windows.Forms.BindingNavigator bindingNavigatorHocSinh;
     }
 }
