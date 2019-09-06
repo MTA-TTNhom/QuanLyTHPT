@@ -39,4 +39,17 @@ namespace QLHocSinhTHPT.Component
 
             return m_Truong;
         }
+
+        public String ArrayToString(String[] array, int n)
+        {
+            String str = "";
+            for (int i = 0; i < n; i++)
+            {
+                if (i != n - 1)
+                    str += array[i] + ";";
+                else
+                    str += array[i];
+            }
+            return str;
+        }
     }
