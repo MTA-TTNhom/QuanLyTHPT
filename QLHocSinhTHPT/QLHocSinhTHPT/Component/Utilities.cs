@@ -90,5 +90,19 @@ namespace QLHocSinhTHPT.Component
                     return false;
             }
         }
+
+        public Boolean KiemTraSiSo(int siSo)
+        {
+            DataService dS = new DataService();
+            dS.Load(new SqlCommand("SELECT SiSoCanDuoi, SiSoCanTren FROM QUYDINH"));
+
+            int siSoMin = Convert.ToInt32(dS.Rows[0]["SiSoCanDuoi"]);
+            int siSoMax = Convert.ToInt32(dS.Rows[0]["SiSoCanTren"]);
+
+            if (siSo >= siSoMin && siSo <= siSoMax)
+                return true;
+            else
+                return false;
+        }
     }
 }
