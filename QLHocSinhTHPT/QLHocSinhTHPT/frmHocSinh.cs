@@ -150,6 +150,69 @@ namespace QLHocSinhTHPT
         #endregion
 
 
+        #region Click event
+        private void dGVHocSinh_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (txtGioiTinh.Text == "True")
+                ckbGTinhNu.Checked = true;
+            else
+                ckbGTinhNam.Checked = true;
+        }
 
+        private void btnThemDanToc_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormDanToc();
+            m_DanTocCtrl.HienThiDataGridViewComboBoxColumn(colMaDanToc);
+        }
+
+        private void btnThemTonGiao_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormTonGiao();
+            m_TonGiaoCtrl.HienThiDataGridViewComboBoxColumn(colMaTonGiao);
+        }
+
+        private void btnThemNNCha_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormNgheNghiep();
+            m_NgheNghiepChaCtrl.HienThiDataGridViewComboBoxColumnNNCha(colMaNNghiepCha);
+        }
+
+        private void btnThemNNMe_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormNgheNghiep();
+            m_NgheNghiepMeCtrl.HienThiDataGridViewComboBoxColumnNNMe(colMaNNghiepMe);
+        }
+
+        private void btnLuuVaoDS_Click(object sender, EventArgs e)
+        {
+            bool gioiTinh = false;
+            if (ckbGTinhNu.Checked == true)
+                gioiTinh = true;
+
+            if (txtMaHocSinh.Text != "" &&
+                txtTenHocSinh.Text != "" &&
+                txtNoiSinh.Text != "" &&
+                txtHoTenCha.Text != "" &&
+                txtHoTenMe.Text != "" &&
+                dtpNgaySinh.Value != null &&
+                cmbDanToc.SelectedValue != null &&
+                cmbTonGiao.SelectedValue != null &&
+                cmbNgheNghiepCha.SelectedValue != null &&
+                cmbNgheNghiepMe.SelectedValue != null)
+            {
+                if (quyDinh.KiemTraDoTuoi(dtpNgaySinh.Value) == true)
+                {
+                    m_HocSinhCtrl.LuuHocSinh(txtMaHocSinh.Text, txtTenHocSinh.Text, gioiTinh, dtpNgaySinh.Value, txtNoiSinh.Text, cmbDanToc.SelectedValue.ToString(), cmbTonGiao.SelectedValue.ToString(), txtHoTenCha.Text, cmbNgheNghiepCha.SelectedValue.ToString(), txtHoTenMe.Text, cmbNgheNghiepMe.SelectedValue.ToString());
+                    m_HocSinhCtrl.HienThi(dGVHocSinh, bindingNavigatorHocSinh, txtMaHocSinh, txtTenHocSinh, txtGioiTinh, ckbGTinhNam, ckbGTinhNu, dtpNgaySinh, txtNoiSinh, cmbDanToc, cmbTonGiao, txtHoTenCha, cmbNgheNghiepCha, txtHoTenMe, cmbNgheNghiepMe);
+
+                    bindingNavigatorHocSinh.BindingSource.MoveLast();
+                }
+                else
+                    MessageBoxEx.Show("Tuổi của học sinh " + txtTenHocSinh.Text + " không hợp lệ!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+                MessageBoxEx.Show("Giá trị của các ô không được rỗng!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        #endregion
     }
 }
