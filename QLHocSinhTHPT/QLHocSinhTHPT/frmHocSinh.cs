@@ -121,5 +121,35 @@ namespace QLHocSinhTHPT
             e.Cancel = true;
         }
         #endregion
+
+        #region Tìm kiếm học sinh
+        private void txtTimKiem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                TimKiemHocSinh();
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            TimKiemHocSinh();
+        }
+
+        void TimKiemHocSinh()
+        {
+            if (chkTimTheoMa.Checked == true)
+            {
+                m_HocSinhCtrl.TimTheoMa(txtTimKiem.Text);
+            }
+            else
+            {
+                m_HocSinhCtrl.TimTheoTen(txtTimKiem.Text);
+            }
+        }
+        #endregion
+
+
+
     }
 }
