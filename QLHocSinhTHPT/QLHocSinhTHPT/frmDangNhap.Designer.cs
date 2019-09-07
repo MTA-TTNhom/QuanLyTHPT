@@ -111,5 +111,137 @@
         }
 
         #endregion
+
+         // 
+            // btnHuyBo
+            // 
+            this.btnHuyBo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnHuyBo.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btnHuyBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnHuyBo.Location = new System.Drawing.Point(269, 117);
+            this.btnHuyBo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHuyBo.Name = "btnHuyBo";
+            this.btnHuyBo.Size = new System.Drawing.Size(100, 28);
+            this.btnHuyBo.TabIndex = 4;
+            this.btnHuyBo.Text = "Hủy bỏ";
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
+            // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnDangNhap.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnDangNhap.Location = new System.Drawing.Point(155, 117);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(100, 28);
+            this.btnDangNhap.TabIndex = 3;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(69, 68);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(80, 28);
+            this.lblPassword.TabIndex = 0;
+            this.lblPassword.Text = "Mật khẩu:";
+            this.lblPassword.TextAlignment = System.Drawing.StringAlignment.Far;
+            this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(13, 18);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(136, 28);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Tên đăng nhập:";
+            this.lblUsername.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
+            // txtPassword
+            // 
+            // 
+            // 
+            // 
+            this.txtPassword.Border.Class = "TextBoxBorder";
+            this.txtPassword.Location = new System.Drawing.Point(196, 68);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.MaxLength = 30;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '●';
+            this.txtPassword.Size = new System.Drawing.Size(213, 27);
+            this.txtPassword.TabIndex = 2;
+            this.txtPassword.WatermarkText = "Mật khẩu";
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.txtUsername.BackColor = System.Drawing.SystemColors.Window;
+        }
+            // 
+            // 
+            // 
+            this.txtUsername.Border.Class = "TextBoxBorder";
+            this.txtUsername.Location = new System.Drawing.Point(196, 18);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.MaxLength = 30;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(213, 27);
+            this.txtUsername.TabIndex = 1;
+            this.txtUsername.WatermarkText = "Tên đăng nhập";
+            // 
+            // panelTop
+            // 
+            this.panelTop.Controls.Add(this.lblTitle);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(459, 49);
+            this.panelTop.TabIndex = 1;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTitle.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(459, 49);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "QUẢN LÝ THPT";
+            this.lblTitle.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // frmDangNhap
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(459, 231);
+            this.Controls.Add(this.gPanelDangNhap);
+            this.Controls.Add(this.panelTop);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmDangNhap";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ĐĂNG NHẬP";
+            this.gPanelDangNhap.ResumeLayout(false);
+            this.gPanelDangNhap.PerformLayout();
+            this.panelTop.ResumeLayout(false);
+            this.ResumeLayout(false);
+
     }
+
+#endregion
 }
