@@ -244,4 +244,15 @@
     }
 
 #endregion
+    private DevComponents.DotNetBar.Controls.GroupPanel gPanelDangNhap;
+    private DevComponents.DotNetBar.ButtonX btnDangNhap;
+    private DevComponents.DotNetBar.LabelX lblUsername;
+    private DevComponents.DotNetBar.LabelX lblPassword;
+    private DevComponents.DotNetBar.ButtonX btnHuyBo;
+    private System.Windows.Forms.Panel panelTop;
+    private DevComponents.DotNetBar.LabelX lblTitle;
+    public DevComponents.DotNetBar.Controls.TextBoxX txtUsername;
+    public DevComponents.DotNetBar.Controls.TextBoxX txtPassword;
+    public System.Windows.Forms.Label lblUserError;
+    public System.Windows.Forms.Label lblPassError;
 }
