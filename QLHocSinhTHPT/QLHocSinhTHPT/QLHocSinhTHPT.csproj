@@ -82,6 +82,7 @@
   <ItemGroup>
     <Compile Include="Bussiness\KQCaNamTongHopInfo.cs" />
     <Compile Include="Bussiness\HocSinhInfo.cs" />
+    <Compile Include="Bussiness\PhanCongInfo.cs" />
     <Compile Include="Bussiness\QuyDinhInfo.cs" />
     <Compile Include="Bussiness\PhanLopInfo.cs" />
     <Compile Include="Bussiness\DanTocInfo.cs" />
