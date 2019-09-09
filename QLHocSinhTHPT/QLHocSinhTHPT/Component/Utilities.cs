@@ -140,6 +140,28 @@ namespace QLHocSinhTHPT.Component
         }
     }
     #endregion
-
-}
+    #region ThamSo
+    public static class ThamSo
+    {
+        #region Fields
+        public static frmAbout m_FrmAbout = null;
+        public static frmConnection m_FrmConnection = null;
+        public static frmGiaoVien m_FrmGiaoVien = null;
+        public static frmHocSinh m_FrmHocSinh = null;
+        public static frmLop m_FrmLop = null;
+        public static frmMain m_FrmMain = null;
+        public static frmPhanCong m_FrmPhanCong = null;
+        public static frmLoaiNguoiDung m_FrmLoaiNguoiDung = null;
+        public static frmTimKiemGV m_TimKiemGV = null;
+        public static frmTimKiemHS m_TimKiemHS = null;
+        public static frmQuyDinh m_FrmQuyDinh = null;
+        //public static frptDanhSachGiaoVien      m_FrmDSGiaoVien         = null;
+        //public static frptDanhSachHocSinh       m_FrmDSHocSinh          = null;
+        //public static frptDanhSachLopHoc        m_FrmDSLopHoc           = null;
+        //public static frptKetQuaCaNam_Lop       m_FrmKetQuaCaNam_Lop    = null;
+        //public static frptKetQuaCaNam_MonHoc    m_FrmKetQuaCaNam_MonHoc = null;
+        //public static frptKetQuaHocKy_Lop       m_FrmKetQuaHocKy_Lop    = null;
+        //public static frptKetQuaHocKy_MonHoc    m_FrmKetQuaHocKy_MonHoc = null;
+        #endregion
+    }
 }
