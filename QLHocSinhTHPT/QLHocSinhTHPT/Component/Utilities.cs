@@ -104,5 +104,42 @@ namespace QLHocSinhTHPT.Component
             else
                 return false;
         }
+
+        public Boolean KiemTraDoTuoi(DateTime ngaySinh)
+        {
+            DataService dS = new DataService();
+            dS.Load(new SqlCommand("SELECT TuoiCanDuoi, TuoiCanTren FROM QUYDINH"));
+
+            int doTuoiMin = Convert.ToInt32(dS.Rows[0]["TuoiCanDuoi"]);
+            int doTuoiMax = Convert.ToInt32(dS.Rows[0]["TuoiCanTren"]);
+
+            int doTuoi = DateTime.Today.Year - ngaySinh.Year;
+
+            if (doTuoi >= doTuoiMin && doTuoi <= doTuoiMax)
+                return true;
+            else
+                return false;
+        }
+
+        public String LaySTT(int autoNum)
+        {
+            if (autoNum < 10)
+                return "000" + autoNum;
+
+            else if (autoNum >= 10 && autoNum < 100)
+                return "00" + autoNum;
+
+            else if (autoNum >= 100 && autoNum < 1000)
+                return "0" + autoNum;
+
+            else if (autoNum >= 1000 && autoNum < 10000)
+                return "" + autoNum;
+
+            else
+                return "";
+        }
     }
+    #endregion
+
+}
 }
