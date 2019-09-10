@@ -163,5 +163,38 @@ namespace QLHocSinhTHPT.Component
         //public static frptKetQuaHocKy_Lop       m_FrmKetQuaHocKy_Lop    = null;
         //public static frptKetQuaHocKy_MonHoc    m_FrmKetQuaHocKy_MonHoc = null;
         #endregion
+
+        #region Menu quan ly
+        public static void ShowFormLopHoc()
+        {
+            if (m_FrmLop == null || m_FrmLop.IsDisposed)
+            {
+                m_FrmLop = new frmLop();
+                m_FrmLop.MdiParent = frmMain.ActiveForm;
+                m_FrmLop.Show();
+            }
+            else
+                m_FrmLop.Activate();
+        }
+
+        public static void ShowFormKhoiLop()
+        {
+
+        }
+
+        public static void ShowFormHocKy()
+        {
+
+        }
+
+        public static void ShowFormNamHoc()
+        {
+
+        }
+
+        public static void ShowFormMonHoc()
+        {
+
+        }
     }
 }
