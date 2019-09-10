@@ -196,5 +196,38 @@ namespace QLHocSinhTHPT.Component
         {
 
         }
+
+        public static void ShowFormLoaiDiem()
+        {
+
+        }
+
+        public static void ShowFormNhapDiemRieng()
+        {
+
+        }
+
+        public static void ShowFormNhapDiemChung()
+        {
+
+        }
+
+        public static void ShowFormXemDiem()
+        {
+
+        }
+
+        public static void ShowFormKetQua()
+        {
+        }
+
+        public static void ShowFormHocLuc()
+        {
+        }
+
+        public static void ShowFormHanhKiem()
+        {
+
+        }
     }
 }
