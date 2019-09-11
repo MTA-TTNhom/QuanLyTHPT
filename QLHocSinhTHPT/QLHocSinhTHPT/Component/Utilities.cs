@@ -272,5 +272,104 @@ namespace QLHocSinhTHPT.Component
             else
                 m_FrmGiaoVien.Activate();
         }
+
+        public static void ShowFormPhanCong()
+        {
+            if (m_FrmPhanCong == null || m_FrmPhanCong.IsDisposed)
+            {
+                m_FrmPhanCong = new frmPhanCong();
+                m_FrmPhanCong.MdiParent = frmMain.ActiveForm;
+                m_FrmPhanCong.Show();
+            }
+            else
+                m_FrmPhanCong.Activate();
+        }
+        #endregion
+
+        //#region Menu thong ke
+        //public static void ShowFormKQHKTheoLop()
+        //{
+        //    if (m_FrmKetQuaHocKy_Lop == null || m_FrmKetQuaHocKy_Lop.IsDisposed)
+        //    {
+        //        m_FrmKetQuaHocKy_Lop = new frptKetQuaHocKy_Lop();
+        //        m_FrmKetQuaHocKy_Lop.MdiParent = frmMain.ActiveForm;
+        //        m_FrmKetQuaHocKy_Lop.Show();
+        //    }
+        //    else
+        //        m_FrmKetQuaHocKy_Lop.Activate();
+        //}
+
+        //public static void ShowFormKQHKTheoMon()
+        //{
+        //    if (m_FrmKetQuaHocKy_MonHoc == null || m_FrmKetQuaHocKy_MonHoc.IsDisposed)
+        //    {
+        //        m_FrmKetQuaHocKy_MonHoc = new frptKetQuaHocKy_MonHoc();
+        //        m_FrmKetQuaHocKy_MonHoc.MdiParent = frmMain.ActiveForm;
+        //        m_FrmKetQuaHocKy_MonHoc.Show();
+        //    }
+        //    else
+        //        m_FrmKetQuaHocKy_MonHoc.Activate();
+        //}
+
+        //public static void ShowFormKQCNTheoLop()
+        //{
+        //    if (m_FrmKetQuaCaNam_Lop == null || m_FrmKetQuaCaNam_Lop.IsDisposed)
+        //    {
+        //        m_FrmKetQuaCaNam_Lop = new frptKetQuaCaNam_Lop();
+        //        m_FrmKetQuaCaNam_Lop.MdiParent = frmMain.ActiveForm;
+        //        m_FrmKetQuaCaNam_Lop.Show();
+        //    }
+        //    else
+        //        m_FrmKetQuaCaNam_Lop.Activate();
+        //}
+
+        //public static void ShowFormKQCNTheoMon()
+        //{
+        //    if (m_FrmKetQuaCaNam_MonHoc == null || m_FrmKetQuaCaNam_MonHoc.IsDisposed)
+        //    {
+        //        m_FrmKetQuaCaNam_MonHoc = new frptKetQuaCaNam_MonHoc();
+        //        m_FrmKetQuaCaNam_MonHoc.MdiParent = frmMain.ActiveForm;
+        //        m_FrmKetQuaCaNam_MonHoc.Show();
+        //    }
+        //    else
+        //        m_FrmKetQuaCaNam_MonHoc.Activate();
+        //}
+
+        //public static void ShowFormDanhSachHocSinh()
+        //{
+        //    if (m_FrmDSHocSinh == null || m_FrmDSHocSinh.IsDisposed)
+        //    {
+        //        m_FrmDSHocSinh = new frptDanhSachHocSinh();
+        //        m_FrmDSHocSinh.MdiParent = frmMain.ActiveForm;
+        //        m_FrmDSHocSinh.Show();
+        //    }
+        //    else
+        //        m_FrmDSHocSinh.Activate();
+        //}
+
+        //public static void ShowFormDanhSachGiaoVien()
+        //{
+        //    if (m_FrmDSGiaoVien == null || m_FrmDSGiaoVien.IsDisposed)
+        //    {
+        //        m_FrmDSGiaoVien = new frptDanhSachGiaoVien();
+        //        m_FrmDSGiaoVien.MdiParent = frmMain.ActiveForm;
+        //        m_FrmDSGiaoVien.Show();
+        //    }
+        //    else
+        //        m_FrmDSGiaoVien.Activate();
+        //}
+
+        //public static void ShowFormDanhSachLopHoc()
+        //{
+        //    if (m_FrmDSLopHoc == null || m_FrmDSLopHoc.IsDisposed)
+        //    {
+        //        m_FrmDSLopHoc = new frptDanhSachLopHoc();
+        //        m_FrmDSLopHoc.MdiParent = frmMain.ActiveForm;
+        //        m_FrmDSLopHoc.Show();
+        //    }
+        //    else
+        //        m_FrmDSLopHoc.Activate();
+        //}
+        //#endregion
     }
 }
