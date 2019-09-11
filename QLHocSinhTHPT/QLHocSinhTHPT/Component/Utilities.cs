@@ -229,5 +229,48 @@ namespace QLHocSinhTHPT.Component
         {
 
         }
+        public static void ShowFormHocSinh()
+        {
+            if (m_FrmHocSinh == null || m_FrmHocSinh.IsDisposed)
+            {
+                m_FrmHocSinh = new frmHocSinh();
+                m_FrmHocSinh.MdiParent = frmMain.ActiveForm;
+                m_FrmHocSinh.Show();
+            }
+            else
+                m_FrmHocSinh.Activate();
+        }
+
+        public static void ShowFormPhanLop()
+        {
+
+        }
+
+        public static void ShowFormDanToc()
+        {
+
+        }
+
+        public static void ShowFormTonGiao()
+        {
+
+        }
+
+        public static void ShowFormNgheNghiep()
+        {
+
+        }
+
+        public static void ShowFormGiaoVien()
+        {
+            if (m_FrmGiaoVien == null || m_FrmGiaoVien.IsDisposed)
+            {
+                m_FrmGiaoVien = new frmGiaoVien();
+                m_FrmGiaoVien.MdiParent = frmMain.ActiveForm;
+                m_FrmGiaoVien.Show();
+            }
+            else
+                m_FrmGiaoVien.Activate();
+        }
     }
 }
