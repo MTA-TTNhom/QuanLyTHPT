@@ -371,5 +371,31 @@ namespace QLHocSinhTHPT.Component
         //        m_FrmDSLopHoc.Activate();
         //}
         //#endregion
+
+        #region Menu tra cuu
+        public static void ShowFormTimKiemHS()
+        {
+            if (m_TimKiemHS == null || m_TimKiemHS.IsDisposed)
+            {
+                m_TimKiemHS = new frmTimKiemHS();
+                m_TimKiemHS.MdiParent = frmMain.ActiveForm;
+                m_TimKiemHS.Show();
+            }
+            else
+                m_TimKiemHS.Activate();
+        }
+
+        public static void ShowFormTimKiemGV()
+        {
+            if (m_TimKiemGV == null || m_TimKiemGV.IsDisposed)
+            {
+                m_TimKiemGV = new frmTimKiemGV();
+                m_TimKiemGV.MdiParent = frmMain.ActiveForm;
+                m_TimKiemGV.Show();
+            }
+            else
+                m_TimKiemGV.Activate();
+        }
+        #endregion
     }
 }
