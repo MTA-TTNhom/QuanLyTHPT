@@ -59,6 +59,15 @@
     <Compile Include="Bussiness\LopInfo.cs" />
     <Compile Include="Bussiness\MonHocInfo.cs" />
     <Compile Include="Bussiness\NamHocInfo.cs" />
+    <Compile Include="Controller\GiaoVienCtrl.cs" />
+    <Compile Include="Controller\DanTocCtrl.cs" />
+    <Compile Include="Controller\HocSinhCtrl.cs" />
+    <Compile Include="Controller\LoaiNguoiDungCtrl.cs" />
+    <Compile Include="Controller\LopCtrl.cs" />
+    <Compile Include="Controller\MonHocCtrl.cs" />
+    <Compile Include="Controller\NamHocCtrl.cs" />
+    <Compile Include="Controller\NgheNghiepCtrl.cs" />
+    <Compile Include="Controller\NguoiDungCtrl.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,5 +98,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
