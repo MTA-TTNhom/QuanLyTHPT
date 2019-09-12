@@ -1,3 +1,15 @@
+﻿using System;
+using System.Text;
+using System.Data;
+using System.Windows.Forms;
+using DevComponents.DotNetBar.Controls;
+using DevComponents.Editors;
+using QLHocSinhTHPT.DataLayer;
+
+namespace QLHocSinhTHPT.Controller
+{
+    public class QuyDinhCtrl
+    {
         QuyDinhData m_QuyDinhData = new QuyDinhData();
 
         public void HienThi(IntegerInput txtSiSoCanDuoi,
