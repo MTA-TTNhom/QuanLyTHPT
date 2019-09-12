@@ -16,5 +16,17 @@ namespace QLHocSinhTHPT.Component
         {
             InitializeComponent();
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // frmAbout
+            // 
+            this.ClientSize = new System.Drawing.Size(865, 537);
+            this.Name = "frmAbout";
+            this.ResumeLayout(false);
+
+        }
     }
 }
