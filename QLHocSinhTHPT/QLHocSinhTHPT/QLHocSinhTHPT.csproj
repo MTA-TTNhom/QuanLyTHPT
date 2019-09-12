@@ -49,7 +49,7 @@
     <Compile Include="Bussiness\DiemInfo.cs" />
     <Compile Include="Bussiness\GiaoVienInfo.cs" />
     <Compile Include="Bussiness\HanhKiemInfo.cs" />
-    <Compile Include="Bussiness\HocKy.cs" />
+    <Compile Include="Bussiness\HocKyInfo.cs" />
     <Compile Include="Bussiness\HocLucInfo.cs" />
     <Compile Include="Bussiness\HocSinhInfo.cs" />
     <Compile Include="Bussiness\KetQuaInfo.cs" />
@@ -59,6 +59,12 @@
     <Compile Include="Bussiness\LopInfo.cs" />
     <Compile Include="Bussiness\MonHocInfo.cs" />
     <Compile Include="Bussiness\NamHocInfo.cs" />
+    <Compile Include="Bussiness\NgheNghiepInfo.cs" />
+    <Compile Include="Bussiness\NguoiDungInfo.cs" />
+    <Compile Include="Bussiness\PhanCongInfo.cs" />
+    <Compile Include="Bussiness\PhanLopInfo.cs" />
+    <Compile Include="Bussiness\QuyDinhInfo.cs" />
+    <Compile Include="Bussiness\TonGiaoInfo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,9 +91,73 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add.png" />
+    <Content Include="Resources\background.jpg" />
+    <Content Include="Resources\cachnhapdiem.png" />
+    <Content Include="Resources\chuyenlop.png" />
+    <Content Include="Resources\closephanlop.png" />
+    <Content Include="Resources\connection.png" />
+    <Content Include="Resources\dangnhap.png" />
+    <Content Include="Resources\dangnhapcontext.png" />
+    <Content Include="Resources\dangxuat.png" />
+    <Content Include="Resources\dangxuatcontext.png" />
+    <Content Include="Resources\dantoc.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\diem.png" />
+    <Content Include="Resources\doimatkhau.png" />
+    <Content Include="Resources\doimatkhaucontext.png" />
+    <Content Include="Resources\dsgiaovien.png" />
+    <Content Include="Resources\dshocsinh.png" />
+    <Content Include="Resources\dslophoc.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\giaovien.png" />
+    <Content Include="Resources\hanhkiem.png" />
+    <Content Include="Resources\help.png" />
+    <Content Include="Resources\hocky.png" />
+    <Content Include="Resources\hocluc.png" />
+    <Content Include="Resources\hocsinh.png" />
+    <Content Include="Resources\huongdan.png" />
+    <Content Include="Resources\ketqua.png" />
+    <Content Include="Resources\khoilop.png" />
+    <Content Include="Resources\kqcnamtheolop.png" />
+    <Content Include="Resources\kqcnamtheomon.png" />
+    <Content Include="Resources\kqhockytheolop.png" />
+    <Content Include="Resources\kqhockytheomon.png" />
+    <Content Include="Resources\loainguoidung.png" />
+    <Content Include="Resources\loginimage.png" />
+    <Content Include="Resources\lophoc.png" />
+    <Content Include="Resources\luuchuyenlop.png" />
+    <Content Include="Resources\monhoc.png" />
+    <Content Include="Resources\namhoc.png" />
+    <Content Include="Resources\nghenghiep.png" />
+    <Content Include="Resources\phancong.png" />
+    <Content Include="Resources\phanlop.png" />
+    <Content Include="Resources\phuchoidulieu.png" />
+    <Content Include="Resources\pupils.png" />
+    <Content Include="Resources\qddotuoi.png" />
+    <Content Include="Resources\qdsiso.png" />
+    <Content Include="Resources\qdthangdiem.png" />
+    <Content Include="Resources\quanlynguoidung.png" />
+    <Content Include="Resources\refresh.png" />
+    <Content Include="Resources\saoluudulieu.png" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\splash.png" />
+    <Content Include="Resources\start.png" />
+    <Content Include="Resources\thoat.png" />
+    <Content Include="Resources\thongtinphanmem.png" />
+    <Content Include="Resources\tongiao.png" />
+    <Content Include="Resources\tracuugiaovien.png" />
+    <Content Include="Resources\tracuuhocsinh.png" />
+    <Content Include="Resources\tttruonghoc.png" />
+    <Content Include="Resources\xemdiem.png" />
+    <Content Include="Resources\xeploai.png" />
+    <Content Include="Resources\xoachuyenlop.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
