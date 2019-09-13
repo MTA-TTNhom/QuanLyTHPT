@@ -68,6 +68,8 @@
     <Compile Include="Controller\NamHocCtrl.cs" />
     <Compile Include="Controller\NgheNghiepCtrl.cs" />
     <Compile Include="Controller\NguoiDungCtrl.cs" />
+    <Compile Include="Controller\PhanCongCtrl.cs" />
+    <Compile Include="Controller\QuyDinhCtrl.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
