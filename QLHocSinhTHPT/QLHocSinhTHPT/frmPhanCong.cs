@@ -11,13 +11,12 @@ namespace QLHocSinhTHPT
 {
     public partial class frmPhanCong : Office2007Form
     {
-
         #region Fields
-        PhanCongCtrl m_PhanCongCtrl = new PhanCongCtrl();
-        NamHocCtrl m_NamHocCtrl = new NamHocCtrl();
-        LopCtrl m_LopCtrl = new LopCtrl();
-        MonHocCtrl m_MonHocCtrl = new MonHocCtrl();
-        GiaoVienCtrl m_GiaoVienCtrl = new GiaoVienCtrl();
+        PhanCongCtrl    m_PhanCongCtrl  = new PhanCongCtrl();
+        NamHocCtrl      m_NamHocCtrl    = new NamHocCtrl();
+        LopCtrl         m_LopCtrl       = new LopCtrl();
+        MonHocCtrl      m_MonHocCtrl    = new MonHocCtrl();
+        GiaoVienCtrl    m_GiaoVienCtrl  = new GiaoVienCtrl();
         #endregion
 
         #region Constructor
@@ -46,16 +45,16 @@ namespace QLHocSinhTHPT
         #endregion
 
         #region BindingNavigatorItems
-
+        
 
         private void bindingNavigatorExitItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        
 
-
-
+        
 
         public Boolean KiemTraTruocKhiLuu(String cellString)
         {
@@ -76,9 +75,9 @@ namespace QLHocSinhTHPT
 
         private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            if (KiemTraTruocKhiLuu("colMaNamHoc") == true &&
-                KiemTraTruocKhiLuu("colMaLop") == true &&
-                KiemTraTruocKhiLuu("colMaMonHoc") == true &&
+            if (KiemTraTruocKhiLuu("colMaNamHoc")   == true &&
+                KiemTraTruocKhiLuu("colMaLop")      == true &&
+                KiemTraTruocKhiLuu("colMaMonHoc")   == true &&
                 KiemTraTruocKhiLuu("colMaGiaoVien") == true)
             {
                 m_PhanCongCtrl.LuuPhanCong();
@@ -147,7 +146,7 @@ namespace QLHocSinhTHPT
             m_GiaoVienCtrl.HienThiDataGridViewComboBoxColumn(colMaGiaoVien);
         }
 
-
+        
         #endregion
 
         #region SelectedIndexChanged event

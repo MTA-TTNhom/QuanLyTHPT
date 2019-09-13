@@ -42,7 +42,7 @@ namespace QLHocSinhTHPT.Controller
             dGV.DataSource = bS;
         }
 
-
+        
         #endregion
 
         #region Lay danh sach giao vien do vao report
@@ -80,7 +80,7 @@ namespace QLHocSinhTHPT.Controller
         {
             return m_GiaoVienData.ThemDongMoi();
         }
-
+        
 
         public void ThemGiaoVien(DataRow m_Row)
         {
@@ -118,12 +118,11 @@ namespace QLHocSinhTHPT.Controller
         {
             m_GiaoVienData.TimTheoMa(m_MaGiaoVien);
         }
-
+        
         public void TimTheoTen(String m_TenGiaoVien)
         {
             m_GiaoVienData.TimTheoTen(m_TenGiaoVien);
         }
         #endregion
-
     }
 }
