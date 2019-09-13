@@ -397,5 +397,45 @@ namespace QLHocSinhTHPT.Component
                 m_TimKiemGV.Activate();
         }
         #endregion
+
+        #region Menu quy dinh
+        public static void ShowFormQuyDinh()
+        {
+            if (m_FrmQuyDinh == null || m_FrmQuyDinh.IsDisposed)
+            {
+                m_FrmQuyDinh = new frmQuyDinh();
+                m_FrmQuyDinh.Show();
+            }
+            else
+                m_FrmQuyDinh.Activate();
+        }
+
+        public static void ShowFormKetNoi()
+        {
+            if (m_FrmConnection == null || m_FrmConnection.IsDisposed)
+            {
+                m_FrmConnection = new frmConnection();
+                m_FrmConnection.Show();
+            }
+            else
+                m_FrmConnection.Activate();
+        }
+        #endregion
+
+        #region Menu giup do
+        public static void ShowFormThongTin()
+        {
+            if (m_FrmAbout == null || m_FrmAbout.IsDisposed)
+            {
+                m_FrmAbout = new frmAbout();
+                m_FrmAbout.Show();
+            }
+            else
+                m_FrmAbout.Activate();
+        }
+        #endregion
+        #endregion
     }
+#endregion
+}
 }
