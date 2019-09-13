@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QLHocSinhTHPT.Component
 {
-    #region CalenderColumn
-    class CalendarColumn:DataGridViewColumn
+    #region CalendarColumn
+    public class CalendarColumn : DataGridViewColumn
     {
         public CalendarColumn() : base(new CalendarCell()) { }
 

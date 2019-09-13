@@ -1,22 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
+using QLHocSinhTHPT.Controller;
+using QLHocSinhTHPT.Component;
+using DevComponents.DotNetBar;
 
 namespace QLHocSinhTHPT
 {
-    public partial class frmLop : Form
+    public partial class frmLop : Office2007Form
     {
         #region Fields
-        LopCtrl m_LopCtrl = new LopCtrl();
-        NamHocCtrl m_NamHocCtrl = new NamHocCtrl();
-        GiaoVienCtrl m_GiaoVienCtrl = new GiaoVienCtrl();
-        QuyDinh quyDinh = new QuyDinh();
+        LopCtrl         m_LopCtrl       = new LopCtrl();
+        NamHocCtrl      m_NamHocCtrl    = new NamHocCtrl();
+        GiaoVienCtrl    m_GiaoVienCtrl  = new GiaoVienCtrl();
+        QuyDinh         quyDinh         = new QuyDinh();
         #endregion
 
         #region Constructor
@@ -39,16 +38,15 @@ namespace QLHocSinhTHPT
         }
         #endregion
 
-
         #region BindingNavigatorItems
-
+        
 
         private void bindingNavigatorExitItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-
+        
 
         private void bindingNavigatorRefreshItem_Click(object sender, EventArgs e)
         {
@@ -81,7 +79,7 @@ namespace QLHocSinhTHPT
                     try
                     {
                         int siSo = Convert.ToInt32(row.Cells[siSoColumn].Value.ToString());
-
+                        
                         if (quyDinh.KiemTraSiSo(siSo) == false)
                         {
                             MessageBoxEx.Show("Sỉ số không đúng quy định!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -100,18 +98,17 @@ namespace QLHocSinhTHPT
 
         private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            if (KiemTraTruocKhiLuu("colMaLop") == true &&
-                KiemTraTruocKhiLuu("colTenLop") == true &&
-                KiemTraTruocKhiLuu("colMaKhoiLop") == true &&
-                KiemTraTruocKhiLuu("colMaNamHoc") == true &&
+            if (KiemTraTruocKhiLuu("colMaLop")      == true &&
+                KiemTraTruocKhiLuu("colTenLop")     == true &&
+                KiemTraTruocKhiLuu("colMaKhoiLop")  == true &&
+                KiemTraTruocKhiLuu("colMaNamHoc")   == true &&
                 KiemTraTruocKhiLuu("colMaGiaoVien") == true &&
-                KiemTraSiSoTruocKhiLuu("colSiSo") == true)
+                KiemTraSiSoTruocKhiLuu("colSiSo")   == true)
             {
                 m_LopCtrl.LuuLop();
             }
         }
         #endregion
-
 
         #region DataError event
         private void dGVLop_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -148,7 +145,7 @@ namespace QLHocSinhTHPT
         #endregion
 
         #region Click event
-
+        
 
         private void btnThemNamHoc_Click(object sender, EventArgs e)
         {
@@ -162,8 +159,7 @@ namespace QLHocSinhTHPT
             m_GiaoVienCtrl.HienThiDataGridViewComboBoxColumn(colMaGiaoVien);
         }
 
-
+        
         #endregion
-
     }
 }

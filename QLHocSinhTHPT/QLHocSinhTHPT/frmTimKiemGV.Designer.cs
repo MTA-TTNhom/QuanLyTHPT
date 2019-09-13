@@ -410,7 +410,4 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colTenMonHoc;
         #endregion
     }
-
-#endregion
-}
 }

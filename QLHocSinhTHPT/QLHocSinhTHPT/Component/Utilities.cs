@@ -10,7 +10,6 @@ using QLHocSinhTHPT.Controller;
 using DevComponents.DotNetBar;
 using System.Collections.Generic;
 
-
 namespace QLHocSinhTHPT.Component
 {
     #region Utilities
@@ -52,6 +51,7 @@ namespace QLHocSinhTHPT.Component
             }
             return str;
         }
+
         public Boolean KiemTraDiem(String diemSo)
         {
             IList<String> gioiHanDiem = new List<String>();
@@ -113,7 +113,7 @@ namespace QLHocSinhTHPT.Component
             int doTuoiMin = Convert.ToInt32(dS.Rows[0]["TuoiCanDuoi"]);
             int doTuoiMax = Convert.ToInt32(dS.Rows[0]["TuoiCanTren"]);
 
-            int doTuoi = DateTime.Today.Year - ngaySinh.Year;
+            int doTuoi    = DateTime.Today.Year - ngaySinh.Year;
 
             if (doTuoi >= doTuoiMin && doTuoi <= doTuoiMax)
                 return true;
@@ -140,21 +140,22 @@ namespace QLHocSinhTHPT.Component
         }
     }
     #endregion
+
     #region ThamSo
     public static class ThamSo
     {
         #region Fields
-        public static frmAbout m_FrmAbout = null;
-        public static frmConnection m_FrmConnection = null;
-        public static frmGiaoVien m_FrmGiaoVien = null;
-        public static frmHocSinh m_FrmHocSinh = null;
-        public static frmLop m_FrmLop = null;
-        public static frmMain m_FrmMain = null;
-        public static frmPhanCong m_FrmPhanCong = null;
-        public static frmLoaiNguoiDung m_FrmLoaiNguoiDung = null;
-        public static frmTimKiemGV m_TimKiemGV = null;
-        public static frmTimKiemHS m_TimKiemHS = null;
-        public static frmQuyDinh m_FrmQuyDinh = null;
+        public static frmAbout                  m_FrmAbout              = null;
+        public static frmConnection             m_FrmConnection         = null;
+        public static frmGiaoVien               m_FrmGiaoVien           = null;
+        public static frmHocSinh                m_FrmHocSinh            = null;
+        public static frmLop                    m_FrmLop                = null;
+        public static frmMain                   m_FrmMain               = null;
+        public static frmPhanCong               m_FrmPhanCong           = null;
+        public static frmLoaiNguoiDung          m_FrmLoaiNguoiDung      = null;
+        public static frmTimKiemGV              m_TimKiemGV             = null;
+        public static frmTimKiemHS              m_TimKiemHS             = null;
+        public static frmQuyDinh                m_FrmQuyDinh            = null;
         //public static frptDanhSachGiaoVien      m_FrmDSGiaoVien         = null;
         //public static frptDanhSachHocSinh       m_FrmDSHocSinh          = null;
         //public static frptDanhSachLopHoc        m_FrmDSLopHoc           = null;
@@ -162,6 +163,21 @@ namespace QLHocSinhTHPT.Component
         //public static frptKetQuaCaNam_MonHoc    m_FrmKetQuaCaNam_MonHoc = null;
         //public static frptKetQuaHocKy_Lop       m_FrmKetQuaHocKy_Lop    = null;
         //public static frptKetQuaHocKy_MonHoc    m_FrmKetQuaHocKy_MonHoc = null;
+        #endregion
+
+        #region Ham goi hien form
+        #region Menu start
+        public static void ShowFormLoaiNguoiDung()
+        {
+            if (m_FrmLoaiNguoiDung == null || m_FrmLoaiNguoiDung.IsDisposed)
+            {
+                m_FrmLoaiNguoiDung = new frmLoaiNguoiDung();
+                m_FrmLoaiNguoiDung.MdiParent = frmMain.ActiveForm;
+                m_FrmLoaiNguoiDung.Show();
+            }
+            else
+                m_FrmLoaiNguoiDung.Activate();
+        }
         #endregion
 
         #region Menu quan ly
@@ -179,42 +195,42 @@ namespace QLHocSinhTHPT.Component
 
         public static void ShowFormKhoiLop()
         {
-
+           
         }
 
         public static void ShowFormHocKy()
         {
-
+         
         }
 
         public static void ShowFormNamHoc()
         {
-
+           
         }
 
         public static void ShowFormMonHoc()
         {
-
+          
         }
 
         public static void ShowFormLoaiDiem()
         {
-
+            
         }
 
         public static void ShowFormNhapDiemRieng()
         {
-
+           
         }
 
         public static void ShowFormNhapDiemChung()
         {
-
+            
         }
 
         public static void ShowFormXemDiem()
         {
-
+           
         }
 
         public static void ShowFormKetQua()
@@ -227,8 +243,9 @@ namespace QLHocSinhTHPT.Component
 
         public static void ShowFormHanhKiem()
         {
-
+           
         }
+
         public static void ShowFormHocSinh()
         {
             if (m_FrmHocSinh == null || m_FrmHocSinh.IsDisposed)
@@ -243,22 +260,22 @@ namespace QLHocSinhTHPT.Component
 
         public static void ShowFormPhanLop()
         {
-
+            
         }
 
         public static void ShowFormDanToc()
         {
-
+           
         }
 
         public static void ShowFormTonGiao()
         {
-
+            
         }
 
         public static void ShowFormNgheNghiep()
         {
-
+            
         }
 
         public static void ShowFormGiaoVien()
@@ -436,7 +453,7 @@ namespace QLHocSinhTHPT.Component
         #endregion
         #endregion
     }
-#endregion
+    #endregion
 
     #region Các hàm xử lý tập tin XML
     public class XML
@@ -456,92 +473,89 @@ namespace QLHocSinhTHPT.Component
             return xmlR;
         }
 
+        public static void XMLWriter(String filename, String servname, String database, String costatus)
+        {
+            XmlTextWriter xmlW = new XmlTextWriter(filename, null);
+            xmlW.Formatting = Formatting.Indented;
+
+            xmlW.WriteStartDocument();
+            xmlW.WriteComment("\nKhong duoc thay doi noi dung file nay!\n" +
+                                "Thong so co ban:\n\t" +
+                                "costatus = true : quyen Windows\n\t" +
+                                "costatus = false: quyen SQL Server\n\t" +
+                                "servname: ten server\n\t" +
+                                "username: ten dang nhap he thong\n\t" +
+                                "password: mat khau dang nhap he thong\n\t" +
+                                "database: ten co so du lieu\n");
+            xmlW.WriteStartElement("config");
+
+            xmlW.WriteStartElement("costatus");
+            xmlW.WriteString(costatus);
+            xmlW.WriteEndElement();
+            
+            xmlW.WriteStartElement("servname");
+            xmlW.WriteString(servname);
+            xmlW.WriteEndElement();
+
+            xmlW.WriteStartElement("username");
+            xmlW.WriteString("");
+            xmlW.WriteEndElement();
+
+            xmlW.WriteStartElement("password");
+            xmlW.WriteString("");
+            xmlW.WriteEndElement();
+
+            xmlW.WriteStartElement("database");
+            xmlW.WriteString(database);
+            xmlW.WriteEndElement();
+
+            xmlW.WriteEndElement();
+            xmlW.WriteEndDocument();
+
+            xmlW.Close();
+        }
+
+        public static void XMLWriter(String filename, String servname, String username, String password, String database, String costatus)
+        {
+            XmlTextWriter xmlW = new XmlTextWriter(filename, null);
+            xmlW.Formatting = Formatting.Indented;
+
+            xmlW.WriteStartDocument();
+            xmlW.WriteComment("\nKhong duoc thay doi noi dung file nay!\n" +
+                                "Thong so co ban:\n\t" +
+                                "costatus = true : quyen Windows\n\t" +
+                                "costatus = false: quyen SQL Server\n\t" +
+                                "servname: ten server\n\t" +
+                                "username: ten dang nhap he thong\n\t" +
+                                "password: mat khau dang nhap he thong\n\t" +
+                                "database: ten co so du lieu\n");
+            xmlW.WriteStartElement("config");
+            
+            xmlW.WriteStartElement("costatus");
+            xmlW.WriteString(costatus);
+            xmlW.WriteEndElement();
+
+            xmlW.WriteStartElement("servname");
+            xmlW.WriteString(servname);
+            xmlW.WriteEndElement();
+
+            xmlW.WriteStartElement("username");
+            xmlW.WriteString(username);
+            xmlW.WriteEndElement();
+
+            xmlW.WriteStartElement("password");
+            xmlW.WriteString(password);
+            xmlW.WriteEndElement();
+
+            xmlW.WriteStartElement("database");
+            xmlW.WriteString(database);
+            xmlW.WriteEndElement();
+
+            xmlW.WriteEndElement();
+            xmlW.WriteEndDocument();
+
+            xmlW.Close();
+        }
     }
-
-    public static void XMLWriter(String filename, String servname, String database, String costatus)
-    {
-        XmlTextWriter xmlW = new XmlTextWriter(filename, null);
-        xmlW.Formatting = Formatting.Indented;
-
-        xmlW.WriteStartDocument();
-        xmlW.WriteComment("\nKhong duoc thay doi noi dung file nay!\n" +
-                            "Thong so co ban:\n\t" +
-                            "costatus = true : quyen Windows\n\t" +
-                            "costatus = false: quyen SQL Server\n\t" +
-                            "servname: ten server\n\t" +
-                            "username: ten dang nhap he thong\n\t" +
-                            "password: mat khau dang nhap he thong\n\t" +
-                            "database: ten co so du lieu\n");
-        xmlW.WriteStartElement("config");
-
-        xmlW.WriteStartElement("costatus");
-        xmlW.WriteString(costatus);
-        xmlW.WriteEndElement();
-
-        xmlW.WriteStartElement("servname");
-        xmlW.WriteString(servname);
-        xmlW.WriteEndElement();
-
-        xmlW.WriteStartElement("username");
-        xmlW.WriteString("");
-        xmlW.WriteEndElement();
-
-        xmlW.WriteStartElement("password");
-        xmlW.WriteString("");
-        xmlW.WriteEndElement();
-
-        xmlW.WriteStartElement("database");
-        xmlW.WriteString(database);
-        xmlW.WriteEndElement();
-
-        xmlW.WriteEndElement();
-        xmlW.WriteEndDocument();
-
-        xmlW.Close();
-    }
-
-    public static void XMLWriter(String filename, String servname, String username, String password, String database, String costatus)
-    {
-        XmlTextWriter xmlW = new XmlTextWriter(filename, null);
-        xmlW.Formatting = Formatting.Indented;
-
-        xmlW.WriteStartDocument();
-        xmlW.WriteComment("\nKhong duoc thay doi noi dung file nay!\n" +
-                            "Thong so co ban:\n\t" +
-                            "costatus = true : quyen Windows\n\t" +
-                            "costatus = false: quyen SQL Server\n\t" +
-                            "servname: ten server\n\t" +
-                            "username: ten dang nhap he thong\n\t" +
-                            "password: mat khau dang nhap he thong\n\t" +
-                            "database: ten co so du lieu\n");
-        xmlW.WriteStartElement("config");
-
-        xmlW.WriteStartElement("costatus");
-        xmlW.WriteString(costatus);
-        xmlW.WriteEndElement();
-
-        xmlW.WriteStartElement("servname");
-        xmlW.WriteString(servname);
-        xmlW.WriteEndElement();
-
-        xmlW.WriteStartElement("username");
-        xmlW.WriteString(username);
-        xmlW.WriteEndElement();
-
-        xmlW.WriteStartElement("password");
-        xmlW.WriteString(password);
-        xmlW.WriteEndElement();
-
-        xmlW.WriteStartElement("database");
-        xmlW.WriteString(database);
-        xmlW.WriteEndElement();
-
-        xmlW.WriteEndElement();
-        xmlW.WriteEndDocument();
-
-        xmlW.Close();
-    }
-}
     #endregion
-}
 }

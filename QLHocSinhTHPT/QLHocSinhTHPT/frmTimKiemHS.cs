@@ -1,21 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
+using QLHocSinhTHPT.Controller;
+using DevComponents.DotNetBar;
 
 namespace QLHocSinhTHPT
 {
-    public partial class frmTimKiemHS : Form
+    public partial class frmTimKiemHS : Office2007Form
     {
         #region Fields
-        DanTocCtrl m_DanTocCtrl = new DanTocCtrl();
-        TonGiaoCtrl m_TonGiaoCtrl = new TonGiaoCtrl();
-        HocSinhCtrl m_HocSinhCtrl = new HocSinhCtrl();
+        DanTocCtrl      m_DanTocCtrl    = new DanTocCtrl();
+        TonGiaoCtrl     m_TonGiaoCtrl   = new TonGiaoCtrl();   
+        HocSinhCtrl     m_HocSinhCtrl   = new HocSinhCtrl();
         #endregion
 
         #region Constructor
@@ -45,7 +43,7 @@ namespace QLHocSinhTHPT
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             m_HocSinhCtrl.TimKiemHocSinh(txtHoTen, cmbTheoNSinh, txtNoiSinh, cmbTheoDToc, cmbDanToc, cmbTheoTGiao, cmbTonGiao, dGVKetQuaTimKiem);
-
+            
             if (dGVKetQuaTimKiem.RowCount == 0)
                 MessageBoxEx.Show("Không có học sinh cần tìm trong hệ thống!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

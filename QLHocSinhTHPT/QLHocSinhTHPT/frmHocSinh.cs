@@ -1,24 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
+using QLHocSinhTHPT.Controller;
+using QLHocSinhTHPT.Component;
+using DevComponents.DotNetBar;
 
 namespace QLHocSinhTHPT
 {
-    public partial class frmHocSinh : Form
+    public partial class frmHocSinh : Office2007Form
     {
         #region Fields
-        HocSinhCtrl m_HocSinhCtrl = new HocSinhCtrl();
-        DanTocCtrl m_DanTocCtrl = new DanTocCtrl();
-        TonGiaoCtrl m_TonGiaoCtrl = new TonGiaoCtrl();
-        NgheNghiepCtrl m_NgheNghiepChaCtrl = new NgheNghiepCtrl();
-        NgheNghiepCtrl m_NgheNghiepMeCtrl = new NgheNghiepCtrl();
-        QuyDinh quyDinh = new QuyDinh();
+        HocSinhCtrl     m_HocSinhCtrl       = new HocSinhCtrl();
+        DanTocCtrl      m_DanTocCtrl        = new DanTocCtrl();
+        TonGiaoCtrl     m_TonGiaoCtrl       = new TonGiaoCtrl();
+        NgheNghiepCtrl  m_NgheNghiepChaCtrl = new NgheNghiepCtrl();
+        NgheNghiepCtrl  m_NgheNghiepMeCtrl  = new NgheNghiepCtrl();
+        QuyDinh         quyDinh             = new QuyDinh();
         #endregion
 
         #region Constructor
@@ -47,13 +46,13 @@ namespace QLHocSinhTHPT
         #endregion
 
         #region BindingNavigatorItems
-
+        
         private void bindingNavigatorExitItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-
+        
 
         private void bindingNavigatorRefreshItem_Click(object sender, EventArgs e)
         {
@@ -84,7 +83,7 @@ namespace QLHocSinhTHPT
                 if (row.Cells[doTuoiColumn].Value != null)
                 {
                     DateTime ngaySinh = Convert.ToDateTime(row.Cells[doTuoiColumn].Value.ToString());
-
+                    
                     if (quyDinh.KiemTraDoTuoi(ngaySinh) == false)
                     {
                         MessageBoxEx.Show("Tuổi học sinh " + row.Cells["colHoTen"].Value.ToString() + " không đúng quy định!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -149,7 +148,6 @@ namespace QLHocSinhTHPT
         }
         #endregion
 
-
         #region Click event
         private void dGVHocSinh_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -189,16 +187,16 @@ namespace QLHocSinhTHPT
             if (ckbGTinhNu.Checked == true)
                 gioiTinh = true;
 
-            if (txtMaHocSinh.Text != "" &&
-                txtTenHocSinh.Text != "" &&
-                txtNoiSinh.Text != "" &&
-                txtHoTenCha.Text != "" &&
-                txtHoTenMe.Text != "" &&
-                dtpNgaySinh.Value != null &&
-                cmbDanToc.SelectedValue != null &&
-                cmbTonGiao.SelectedValue != null &&
-                cmbNgheNghiepCha.SelectedValue != null &&
-                cmbNgheNghiepMe.SelectedValue != null)
+            if (txtMaHocSinh.Text               != "" &&
+                txtTenHocSinh.Text              != "" &&
+                txtNoiSinh.Text                 != "" &&
+                txtHoTenCha.Text                != "" &&
+                txtHoTenMe.Text                 != "" &&
+                dtpNgaySinh.Value               != null &&
+                cmbDanToc.SelectedValue         != null &&
+                cmbTonGiao.SelectedValue        != null &&
+                cmbNgheNghiepCha.SelectedValue  != null &&
+                cmbNgheNghiepMe.SelectedValue   != null)
             {
                 if (quyDinh.KiemTraDoTuoi(dtpNgaySinh.Value) == true)
                 {
