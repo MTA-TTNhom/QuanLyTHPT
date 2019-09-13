@@ -437,5 +437,24 @@ namespace QLHocSinhTHPT.Component
         #endregion
     }
 #endregion
-}
+
+    #region Các hàm xử lý tập tin XML
+    public class XML
+    {
+        public static XmlDocument XMLReader(String filename)
+        {
+            XmlDocument xmlR = new XmlDocument();
+            try
+            {
+                xmlR.Load(filename);
+            }
+            catch
+            {
+                MessageBoxEx.Show("Không đọc được hoặc không tồn tại tập tin cấu hình " + filename, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return xmlR;
+        }
+
+    }
 }
