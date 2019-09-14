@@ -96,6 +96,59 @@
             this.lblReNPassError.Name = "lblReNPassError";
             this.lblReNPassError.Size = new System.Drawing.Size(0, 13);
             this.lblReNPassError.TabIndex = 0;
+
+            this.lblOldPassError.AutoSize = true;
+            this.lblOldPassError.BackColor = System.Drawing.Color.Transparent;
+            this.lblOldPassError.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOldPassError.ForeColor = System.Drawing.Color.Red;
+            this.lblOldPassError.Location = new System.Drawing.Point(167, 40);
+            this.lblOldPassError.Name = "lblOldPassError";
+            this.lblOldPassError.Size = new System.Drawing.Size(0, 13);
+            this.lblOldPassError.TabIndex = 0;
+            // 
+            // btnHuyBo
+            // 
+            this.btnHuyBo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnHuyBo.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btnHuyBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnHuyBo.Location = new System.Drawing.Point(254, 135);
+            this.btnHuyBo.Name = "btnHuyBo";
+            this.btnHuyBo.Size = new System.Drawing.Size(75, 23);
+            this.btnHuyBo.TabIndex = 5;
+            this.btnHuyBo.Text = "Hủy bỏ";
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
+            // 
+            // btnDongY
+            // 
+            this.btnDongY.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnDongY.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btnDongY.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnDongY.Location = new System.Drawing.Point(169, 135);
+            this.btnDongY.Name = "btnDongY";
+            this.btnDongY.Size = new System.Drawing.Size(75, 23);
+            this.btnDongY.TabIndex = 4;
+            this.btnDongY.Text = "Đồng ý";
+            this.btnDongY.Click += new System.EventHandler(this.btnDongY_Click);
+            // 
+            // lblReNewPass
+            // 
+            this.lblReNewPass.BackColor = System.Drawing.Color.Transparent;
+            this.lblReNewPass.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReNewPass.Location = new System.Drawing.Point(8, 95);
+            this.lblReNewPass.Name = "lblReNewPass";
+            this.lblReNewPass.Size = new System.Drawing.Size(155, 23);
+            this.lblReNewPass.TabIndex = 0;
+            this.lblReNewPass.Text = "Nhập lại mật khẩu mới:";
+            // 
+            // lblNewPass
+            // 
+            this.lblNewPass.BackColor = System.Drawing.Color.Transparent;
+            this.lblNewPass.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewPass.Location = new System.Drawing.Point(8, 55);
+            this.lblNewPass.Name = "lblNewPass";
+            this.lblNewPass.Size = new System.Drawing.Size(155, 23);
+            this.lblNewPass.TabIndex = 0;
+            this.lblNewPass.Text = "Mật khẩu mới:";
         }
 
         #endregion
