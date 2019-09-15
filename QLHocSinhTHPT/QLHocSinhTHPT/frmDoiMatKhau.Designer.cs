@@ -152,5 +152,93 @@
         }
 
         #endregion
+
+        // 
+            // lblOldPass
+            // 
+            this.lblOldPass.BackColor = System.Drawing.Color.Transparent;
+            this.lblOldPass.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOldPass.Location = new System.Drawing.Point(8, 15);
+            this.lblOldPass.Name = "lblOldPass";
+            this.lblOldPass.Size = new System.Drawing.Size(155, 23);
+            this.lblOldPass.TabIndex = 0;
+            this.lblOldPass.Text = "Mật khẩu cũ:";
+            // 
+            // txtReNPassword
+            // 
+            // 
+            // 
+            // 
+            this.txtReNPassword.Border.Class = "TextBoxBorder";
+            this.txtReNPassword.Location = new System.Drawing.Point(169, 95);
+            this.txtReNPassword.MaxLength = 30;
+            this.txtReNPassword.Name = "txtReNPassword";
+            this.txtReNPassword.PasswordChar = '●';
+            this.txtReNPassword.Size = new System.Drawing.Size(160, 23);
+            this.txtReNPassword.TabIndex = 3;
+            this.txtReNPassword.WatermarkText = "Xác nhận mật khẩu mới";
+            this.txtReNPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtReNewPassword_KeyDown);
+            // 
+            // txtNewPassword
+            // 
+            // 
+            // 
+            // 
+            this.txtNewPassword.Border.Class = "TextBoxBorder";
+            this.txtNewPassword.Location = new System.Drawing.Point(169, 55);
+            this.txtNewPassword.MaxLength = 30;
+            this.txtNewPassword.Name = "txtNewPassword";
+            this.txtNewPassword.PasswordChar = '●';
+            this.txtNewPassword.Size = new System.Drawing.Size(160, 23);
+            this.txtNewPassword.TabIndex = 2;
+            this.txtNewPassword.WatermarkText = "Mật khẩu mới";
+            // 
+            // txtOldPassword
+            // 
+            // 
+            // 
+            // 
+            this.txtOldPassword.Border.Class = "TextBoxBorder";
+            this.txtOldPassword.Location = new System.Drawing.Point(169, 15);
+            this.txtOldPassword.MaxLength = 30;
+            this.txtOldPassword.Name = "txtOldPassword";
+            this.txtOldPassword.PasswordChar = '●';
+            this.txtOldPassword.Size = new System.Drawing.Size(160, 23);
+            this.txtOldPassword.TabIndex = 1;
+            this.txtOldPassword.WatermarkText = "Mật khẩu cũ";
+            // 
+            // frmDoiMatKhau
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(344, 188);
+            this.Controls.Add(this.gPanelDoiMK);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmDoiMatKhau";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ĐỔI MẬT KHẨU";
+            this.gPanelDoiMK.ResumeLayout(false);
+            this.gPanelDoiMK.PerformLayout();
+            this.ResumeLayout(false);
+
     }
+
+#endregion
+
+    private DevComponents.DotNetBar.Controls.GroupPanel gPanelDoiMK;
+    private DevComponents.DotNetBar.LabelX lblReNewPass;
+    private DevComponents.DotNetBar.LabelX lblNewPass;
+    private DevComponents.DotNetBar.LabelX lblOldPass;
+    private DevComponents.DotNetBar.ButtonX btnDongY;
+    private DevComponents.DotNetBar.ButtonX btnHuyBo;
+    public DevComponents.DotNetBar.Controls.TextBoxX txtReNPassword;
+    public DevComponents.DotNetBar.Controls.TextBoxX txtNewPassword;
+    public DevComponents.DotNetBar.Controls.TextBoxX txtOldPassword;
+    public System.Windows.Forms.Label lblOldPassError;
+    public System.Windows.Forms.Label lblReNPassError;
+    public System.Windows.Forms.Label lblNewPassError;
+}
 }
