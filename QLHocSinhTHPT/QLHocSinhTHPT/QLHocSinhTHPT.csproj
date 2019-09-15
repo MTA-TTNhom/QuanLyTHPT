@@ -70,6 +70,7 @@
     <Compile Include="Controller\NguoiDungCtrl.cs" />
     <Compile Include="Controller\PhanCongCtrl.cs" />
     <Compile Include="Controller\QuyDinhCtrl.cs" />
+    <Compile Include="Controller\TonGiaoCtrl.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

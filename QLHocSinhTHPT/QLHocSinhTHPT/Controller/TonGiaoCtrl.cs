@@ -23,6 +23,42 @@ namespace QLHocSinhTHPT.Controller
             }
             #endregion
 
+            #region Hien thi ComboBox trong DataGridView
+            public void HienThiDataGridViewComboBoxColumn(DataGridViewComboBoxColumn cmbColumn)
+            {
+                cmbColumn.DataSource = m_TonGiaoData.LayDsTonGiao();
+                cmbColumn.DisplayMember = "TenTonGiao";
+                cmbColumn.ValueMember = "MaTonGiao";
+                cmbColumn.DataPropertyName = "MaTonGiao";
+                cmbColumn.HeaderText = "Tôn giáo";
+            }
+            #endregion
+
+            #region Do du lieu vao DataGridView
+            public void HienThi(DataGridViewX dGV, BindingNavigator bN)
+            {
+                BindingSource bS = new BindingSource();
+
+                bS.DataSource = m_TonGiaoData.LayDsTonGiao();
+                bN.BindingSource = bS;
+                dGV.DataSource = bS;
+            }
+            #endregion
+
+
+
+            #region Do du lieu vao DataGridView
+            public void HienThi(DataGridViewX dGV, BindingNavigator bN)
+            {
+                BindingSource bS = new BindingSource();
+
+                bS.DataSource = m_TonGiaoData.LayDsTonGiao();
+                bN.BindingSource = bS;
+                dGV.DataSource = bS;
+            }
+            #endregion
+
+
 
         }
 
