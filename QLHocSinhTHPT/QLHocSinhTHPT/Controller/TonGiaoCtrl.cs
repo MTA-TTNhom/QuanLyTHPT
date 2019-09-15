@@ -59,7 +59,24 @@ namespace QLHocSinhTHPT.Controller
             #endregion
 
 
+            #region Them moi
+            public DataRow ThemDongMoi()
+            {
+                return m_TonGiaoData.ThemDongMoi();
+            }
 
+            public void ThemTonGiao(DataRow m_Row)
+            {
+                m_TonGiaoData.ThemTonGiao(m_Row);
+            }
+            #endregion
+
+            #region Luu du lieu
+            public bool LuuTonGiao()
+            {
+                return m_TonGiaoData.LuuTonGiao();
+            }
+            #endregion
         }
 
 
