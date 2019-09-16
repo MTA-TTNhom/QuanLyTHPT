@@ -16,209 +16,26 @@ namespace QLHocSinhTHPT
         #endregion
 
         #region Constructor
-          private void btnSave_Click(object sender, EventArgs e)
+        public frmTimKiemGV()
         {
-            if (ChangeInfo() == 1)
-            {
-                MessageBox.Show("Thành công!");
-            }
-            load();
+            InitializeComponent();
+            DataService.OpenConnection();
         }
+        #endregion
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        #region Load
+        private void frmTimKiemGV_Load(object sender, EventArgs e)
         {
-            load();
+            m_MonHocCtrl.HienThiComboBox(cmbCMon);
         }
+        #endregion
 
-        private void button1_Click(object sender, EventArgs e)
+        #region BindingNavigatorItems
+        private void bindingNavigatorExitItem_Click(object sender, EventArgs e)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-
-            BonusSkins.Register();
-            SkinManager.EnableFormSkins();
-            Application.Run(new LOGIN());
-            //Application.Run(new Form1());
+            this.Close();
         }
-		
-        private void label1_Click(object sender, EventArgs e)
-        {
-            /*indexdsa
-             * cho nay de check login 
-             * dsdsa*/
-        }
-		            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.gctEmployees = new DevExpress.XtraGrid.GridControl();
-            this.dgvEmployees = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
-            this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.panel7 = new System.Windows.Forms.Panel();
-          
-      
-        private void label1_Click(object sender, EventArgs e)
-        {
-            /*indexdsa
-             * cho nay de check login 
-             * dsdsa*/
-        }
-		            this.panel3 = new System.Windows.Forms.Panel();
-        
-            int _id = Convert.ToInt32(tbID.Text.Trim(' '));
-            DateTime _dateOfBirth = dtpkDateOfBirth.Value;
-            string _name = tbName.Text.Trim(' ');
-            string _userName = tbUserName.Text.Trim(' ');
-            int _sex;
-            if (cbbSex.Text == "Nam") _sex = 1;
-            else _sex = 0;
-            float _salary = (float)Convert.ToDouble(tbSalary.Text);
-            string _telephoneNumber = tbTelephoneNumber.Text.Trim(' ');
-            string _country = tbCountry.Text.Trim(' ');
-            return AcountInfoControl.Instance.ChangeAcount(_id, _name, _dateOfBirth, _sex, _userName, _country, _telephoneNumber);
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (ChangeInfo() == 1)
-            {
-                MessageBox.Show("Thành công!");
-            }
-            load();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            load();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-
-            BonusSkins.Register();
-            SkinManager.EnableFormSkins();
-            Application.Run(new LOGIN());
-            //Application.Run(new Form1());
-        }
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (ChangeInfo() == 1)
-            {
-                MessageBox.Show("Thành công!");
-            }
-            load();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            load();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-
-            BonusSkins.Register();
-            SkinManager.EnableFormSkins();
-            Application.Run(new LOGIN());
-            //Application.Run(new Form1());
-        }
-		
-        ///showfromChild
-        ///
-        private void showFormChild(Form f)
-        {
-            if (!isOpened(f))
-            {
-                f.MdiParent = this;
-                f.Show();
-            }
-        }
-        private bool isOpened(Form f)
-        {
-            bool isOpened = false;
-            if (MdiChildren.Count() > 0)
-            {
-                foreach (var item in MdiChildren)
-                {
-                    if (f.Name == item.Name)
-                    {
-                        xtmm.Pages[item].MdiChild.Activate();
-                        isOpened = true;
-                    }
-                }
-            }
-            return isOpened;
-        }
-        private void btnLogin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            btnLogin.Enabled = false;
-            LOGIN login = new LOGIN();
-            login.ShowDialog();
-            this.Hide();
-        }
-        private void btnAcountInfo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            AcountInfo info = new AcountInfo();
-            info.init(idEmployees, passWord);
-            showFormChild(info);
-        }
-
-        private void btnReceipt_Vou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Receipt_Vou info = new Receipt_Vou();
-            info.InitData(NameEmployees, idEmployees);
-            showFormChild(info);
-        }
-
-        private void btnIssue_Vou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Issue_Vou info = new Issue_Vou();
-            info.InitData(NameEmployees, idEmployees);
-            showFormChild(info);
-        }
-
-        private void btnItem_Em_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Item_Store info = new Item_Store();
-            info.init(typeOfEmployees, idEmployees);
-            showFormChild(info);
-        }
-
-        private void btnEmployees_Store_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Employees_Store info = new Employees_Store();
-            info.init(idEmployees);
-            showFormChild(info);
-        }
-        private void btnItem_Store_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Item_Store info = new Item_Store();
-            info.init(typeOfEmployees, idEmployees);
-            showFormChild(info);
-        }
-
-        private void btnCustormer_Store_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Customer_Store info = new Customer_Store();
-            showFormChild(info);
-        }
-
-        private void btnSupplier_Store_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Supplier_Store info = new Supplier_Store();
-            showFormChild(info);
-        }
-
+        #endregion
 
         #region Tìm kiếm giáo viên
         private void btnTimKiem_Click(object sender, EventArgs e)
