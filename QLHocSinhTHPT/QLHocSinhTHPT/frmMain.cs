@@ -589,5 +589,26 @@ namespace QLHocSinhTHPT
         #endregion
 
         #endregion
+
+
+        private void buttonFile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonBarLop_ItemClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mdiClient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonTabQuyDinh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
