@@ -85,9 +85,79 @@ namespace QLHocSinhTHPT
             }
         }
         #endregion
-        public frmPhanCong()
+
+        #region DataError Event
+        private void dGVPhanCong_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
-            InitializeComponent();
+            e.Cancel = true;
         }
+        #endregion
+
+        #region Tìm kiếm giáo viên trong bảng phân công
+        private void txtTimKiem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                TimKiemPhanCong();
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "")
+                MessageBoxEx.Show("Chưa nhập nội dung cần tìm kiếm vào khung!", "LỖI TÌM KIẾM", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            TimKiemPhanCong();
+        }
+
+        void TimKiemPhanCong()
+        {
+            if (chkTimTheoTenLop.Checked == true)
+            {
+                m_PhanCongCtrl.TimTheoTenLop(txtTimKiem.Text);
+            }
+            else
+            {
+                m_PhanCongCtrl.TimTheoTenGV(txtTimKiem.Text);
+            }
+        }
+        #endregion
+
+        #region Click event
+        private void btnThemNamHoc_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormNamHoc();
+            m_NamHocCtrl.HienThiDataGridViewComboBoxColumn(colMaNamHoc);
+        }
+
+        private void btnThemLop_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormLopHoc();
+            m_LopCtrl.HienThiDataGridViewComboBoxColumn(colMaLop);
+        }
+
+        private void btnThemMonHoc_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormMonHoc();
+            m_MonHocCtrl.HienThiDataGridViewComboBoxColumn(colMaMonHoc);
+        }
+
+        private void btnThemGiaoVien_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormGiaoVien();
+            m_GiaoVienCtrl.HienThiDataGridViewComboBoxColumn(colMaGiaoVien);
+        }
+
+
+        #endregion
+
+        #region SelectedIndexChanged event
+        private void cmbNamHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbNamHoc.SelectedValue != null)
+                m_LopCtrl.HienThiComboBox(cmbNamHoc.SelectedValue.ToString(), cmbLop);
+            cmbLop.DataBindings.Clear();
+        }
+        #endregion
+       
     }
 }
