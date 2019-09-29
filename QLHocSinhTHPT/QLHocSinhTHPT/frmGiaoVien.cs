@@ -295,43 +295,7 @@ namespace QLHocSinhTHPT
             showFormChild(info);
         }
 
-        private void btnReceipt_Vou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Receipt_Vou info = new Receipt_Vou();
-            info.InitData(NameEmployees, idEmployees);
-            showFormChild(info);
-        }
-
-        private void btnIssue_Vou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Issue_Vou info = new Issue_Vou();
-            info.InitData(NameEmployees, idEmployees);
-            showFormChild(info);
-        }
-
-        private void btnItem_Em_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Item_Store info = new Item_Store();
-            info.init(typeOfEmployees, idEmployees);
-            showFormChild(info);
-        }
-
-        private void btnEmployees_Store_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Employees_Store info = new Employees_Store();
-            info.init(idEmployees);
-            showFormChild(info);
-        }
-        private void btnItem_Store_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Item_Store info = new Item_Store();
-            info.init(typeOfEmployees, idEmployees);
-            showFormChild(info);
-        }
-
-        private void btnCustormer_Store_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Customer_Store info = new Customer_Store();
+   er_Store();
             showFormChild(info);
         }
 
