@@ -300,39 +300,6 @@ namespace QLHocSinhTHPT
             showFormChild(info);
         }
 
-        private void btnInventory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Inventory info = new Inventory();
-            showFormChild(info);
-        }
-
-        private void btnStatistical_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnLogout_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Bạn có thực sự muốn đăng xuất?", "Xác minh", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.OK)
-                Application.Exit();
-        }
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnList_ReceiptVou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            ListReceipt_Vou info = new ListReceipt_Vou();
-            showFormChild(info);
-        }
-
-        private void btnList_IssueVou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            ListIssue_Vou info = new ListIssue_Vou();
-            showFormChild(info);
-        }
 
         #region Tìm kiếm giáo viên
         private void btnTimKiem_Click(object sender, EventArgs e)

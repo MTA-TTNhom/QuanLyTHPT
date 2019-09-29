@@ -635,50 +635,7 @@ namespace QLHocSinhTHPT
         private void btnStatistical_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
-        }
-
-        private void btnLogout_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Bạn có thực sự muốn đăng xuất?", "Xác minh", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.OK)
-                Application.Exit();
-        }
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnList_ReceiptVou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            ListReceipt_Vou info = new ListReceipt_Vou();
-            showFormChild(info);
-        }
-
-        private void btnList_IssueVou_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            ListIssue_Vou info = new ListIssue_Vou();
-            showFormChild(info);
-        }
-        #region Load
-        private void frmPhanCong_Load(object sender, EventArgs e)
-        {
-            m_NamHocCtrl.HienThiComboBox(cmbNamHoc);
-            m_LopCtrl.HienThiComboBox(cmbLop);
-            m_MonHocCtrl.HienThiComboBox(cmbMonHoc);
-            m_GiaoVienCtrl.HienThiComboBox(cmbGiaoVien);
-
-            m_NamHocCtrl.HienThiDataGridViewComboBoxColumn(colMaNamHoc);
-            m_LopCtrl.HienThiDataGridViewComboBoxColumn(colMaLop);
-            m_MonHocCtrl.HienThiDataGridViewComboBoxColumn(colMaMonHoc);
-            m_GiaoVienCtrl.HienThiDataGridViewComboBoxColumn(colMaGiaoVien);
-
-            m_PhanCongCtrl.HienThi(dGVPhanCong, txtSTT, cmbNamHoc, cmbLop, cmbMonHoc, cmbGiaoVien);
-        }
-        private void btnThemGiaoVien_Click(object sender, EventArgs e)
-        {
-            ThamSo.ShowFormGiaoVien();
-            m_GiaoVienCtrl.HienThiDataGridViewComboBoxColumn(colMaGiaoVien);
-        }
+ 
 
         
         #endregion
