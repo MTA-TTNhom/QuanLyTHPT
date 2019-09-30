@@ -82,6 +82,7 @@
   <ItemGroup>
     <Compile Include="Bussiness\KQCaNamTongHopInfo.cs" />
     <Compile Include="Bussiness\HocSinhInfo.cs" />
+    <Compile Include="Bussiness\PhanCongInfo.cs" />
     <Compile Include="Bussiness\QuyDinhInfo.cs" />
     <Compile Include="Bussiness\PhanLopInfo.cs" />
     <Compile Include="Bussiness\DanTocInfo.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Bussiness\NamHocInfo.cs" />
     <Compile Include="Bussiness\NgheNghiepInfo.cs" />
     <Compile Include="Bussiness\NguoiDungInfo.cs" />
+    <Compile Include="Bussiness\TonGiaoInfo.cs" />
     <Compile Include="Component\CalendarColumn.cs" />
     <Compile Include="Component\frmConnection.cs">
       <SubType>Form</SubType>
