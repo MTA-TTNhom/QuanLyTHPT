@@ -176,11 +176,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLop.designer.cs">
-      <DependentUpon>frmLop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DataLayer\HocSinhData.cs" />
-    <Compile Include="frmHocSinh.cs">
-      <SubType>Form</SubType>
+      <DependentUpon>frmLop.cs</DependentUpon
     </Compile>
     <Compile Include="frmHocSinh.designer.cs">
       <DependentUpon>frmHocSinh.cs</DependentUpon>
@@ -471,7 +467,7 @@
     <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
