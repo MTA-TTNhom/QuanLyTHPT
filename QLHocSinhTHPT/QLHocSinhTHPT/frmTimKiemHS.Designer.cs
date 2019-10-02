@@ -478,7 +478,7 @@
         private DevComponents.DotNetBar.NavigationPane navPaneLeft;
         private DevComponents.DotNetBar.NavigationPanePanel navPanelTimKiem;
         private DevComponents.DotNetBar.ButtonItem buttonItemTimKiem;
-        private DevComponents.DotNetBar.ButtonX btnTimKiem;
+        private DevComponents.DotNetBar.ButtonX btnTimKiem; 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;

@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
+using QLHocSinhTHPT.Controller;
+using QLHocSinhTHPT.Component;
+using DevComponents.DotNetBar;
 
 namespace QLHocSinhTHPT
 {
-    public partial class frmLoaiNguoiDung : Form
+    public partial class frmLoaiNguoiDung : Office2007Form
     {
         #region Fields
-        LoaiNguoiDungCtrl m_LoaiNguoiDungCtrl = new LoaiNguoiDungCtrl();
-        QuyDinh quyDinh = new QuyDinh();
+        LoaiNguoiDungCtrl   m_LoaiNguoiDungCtrl = new LoaiNguoiDungCtrl();
+        QuyDinh             quyDinh             = new QuyDinh();
         #endregion
 
         #region Constructor
@@ -33,14 +32,14 @@ namespace QLHocSinhTHPT
         #endregion
 
         #region BindingNavigatorItems
-
+       
 
         private void bindingNavigatorExitItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-
+        
         public Boolean KiemTraTruocKhiLuu(String cellString)
         {
             foreach (DataGridViewRow row in dGVLoaiNguoiDung.Rows)
@@ -58,7 +57,7 @@ namespace QLHocSinhTHPT
             return true;
         }
 
-
+        
         #endregion
 
         #region DataError event

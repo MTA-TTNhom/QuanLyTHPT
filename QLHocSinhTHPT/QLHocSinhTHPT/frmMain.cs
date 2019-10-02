@@ -1,23 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
+using QLHocSinhTHPT.Controller;
+using QLHocSinhTHPT.Component;
+using DevComponents.DotNetBar;
 
 namespace QLHocSinhTHPT
 {
-    public partial class frmMain : Form
+    public partial class frmMain : Office2007RibbonForm
     {
         #region Fields
-        NguoiDungCtrl m_NguoiDungCtrl = new NguoiDungCtrl();
-        frmDoiMatKhau m_FrmDoiMatKhau = null;
-        frmDangNhap m_FrmLogin = null;
-        frmNguoiDung m_FrmNguoiDung = null;
-        frmConnection m_Connection = null;
+        NguoiDungCtrl   m_NguoiDungCtrl = new NguoiDungCtrl();
+        frmDoiMatKhau   m_FrmDoiMatKhau = null;
+        frmDangNhap     m_FrmLogin      = null;
+        frmNguoiDung    m_FrmNguoiDung  = null;
+        frmConnection   m_Connection    = null;
         #endregion
 
         #region frmMain
@@ -114,7 +113,7 @@ namespace QLHocSinhTHPT
         {
             if (m_FrmLogin == null || m_FrmLogin.IsDisposed)
                 m_FrmLogin = new frmDangNhap();
-
+            
             m_FrmLogin.txtUsername.Text = "";
             m_FrmLogin.txtPassword.Text = "";
             m_FrmLogin.lblUserError.Text = "";
@@ -333,7 +332,7 @@ namespace QLHocSinhTHPT
         #region DangNhap
         public void DangNhap()
         {
-        Cont:
+            Cont:
             if (m_FrmLogin == null || m_FrmLogin.IsDisposed)
                 m_FrmLogin = new frmDangNhap();
 
@@ -381,10 +380,10 @@ namespace QLHocSinhTHPT
         {
             switch (m_Per)
             {
-                case "LND001": IsBGH(); break;
-                case "LND002": IsGiaoVien(); break;
-                case "LND003": IsGiaoVu(); break;
-                default: Default(); break;
+                case "LND001":  IsBGH();        break;
+                case "LND002":  IsGiaoVien();   break;
+                case "LND003":  IsGiaoVu();     break;
+                default:        Default();      break;
             }
         }
         #endregion
@@ -392,7 +391,7 @@ namespace QLHocSinhTHPT
         #region DoiMatKhau
         public void DoiMatKhau()
         {
-        Cont:
+            Cont:
             if (m_FrmDoiMatKhau.ShowDialog() == DialogResult.OK)
             {
                 if (m_FrmDoiMatKhau.txtOldPassword.Text == "")
@@ -455,19 +454,19 @@ namespace QLHocSinhTHPT
         public void Default()
         {
             //True
-            btnDangNhapContext.Enabled = true;
-            btnThoatContext.Enabled = true;
+            btnDangNhapContext.Enabled  = true;
+            btnThoatContext.Enabled     = true;
             //btnHuongDan.Enabled         = true;
             //btnThongTin.Enabled         = true;
 
             //False
-            btnDangXuatContext.Enabled = false;
-            btnDoiMatKhauContext.Enabled = false;
+            btnDangXuatContext.Enabled  = false;
+            btnDoiMatKhauContext.Enabled= false;
 
-            btnLopHoc.Enabled = false;
-            btnHocSinh.Enabled = false;
-            btnGiaoVien.Enabled = false;
-            btnPhanCong.Enabled = false;
+            btnLopHoc.Enabled           = false;
+            btnHocSinh.Enabled          = false;
+            btnGiaoVien.Enabled         = false;
+            btnPhanCong.Enabled         = false;
 
             //btnKQHKTheoLop.Enabled      = false;
             //btnKQHKTheoMon.Enabled      = false;
@@ -477,13 +476,13 @@ namespace QLHocSinhTHPT
             //btnDanhSachGiaoVien.Enabled = false;
             //btnDanhSachLopHoc.Enabled   = false;
 
-            btnTimKiemHS.Enabled = false;
-            btnTimKiemGV.Enabled = false;
+            btnTimKiemHS.Enabled        = false;
+            btnTimKiemGV.Enabled        = false;
 
-            btnSiSo.Enabled = false;
-            btnThangDiem.Enabled = false;
-            btnDoTuoi.Enabled = false;
-            btnTruong.Enabled = false;
+            btnSiSo.Enabled             = false;
+            btnThangDiem.Enabled        = false;
+            btnDoTuoi.Enabled           = false;
+            btnTruong.Enabled           = false;
         }
         #endregion
 
@@ -491,17 +490,17 @@ namespace QLHocSinhTHPT
         public void IsBGH()
         {
             //False
-            btnDangNhapContext.Enabled = false;
+            btnDangNhapContext.Enabled  = false;
 
             //True
-            btnDangXuatContext.Enabled = true;
-            btnDoiMatKhauContext.Enabled = true;
-            btnThoatContext.Enabled = true;
+            btnDangXuatContext.Enabled  = true;
+            btnDoiMatKhauContext.Enabled= true;
+            btnThoatContext.Enabled     = true;
 
-            btnLopHoc.Enabled = true;
-            btnHocSinh.Enabled = true;
-            btnGiaoVien.Enabled = true;
-            btnPhanCong.Enabled = true;
+            btnLopHoc.Enabled           = true;
+            btnHocSinh.Enabled          = true;
+            btnGiaoVien.Enabled         = true;
+            btnPhanCong.Enabled         = true;
 
             //btnKQHKTheoLop.Enabled      = true;
             //btnKQHKTheoMon.Enabled      = true;
@@ -511,13 +510,13 @@ namespace QLHocSinhTHPT
             //btnDanhSachGiaoVien.Enabled = true;
             //btnDanhSachLopHoc.Enabled   = true;
 
-            btnTimKiemHS.Enabled = true;
-            btnTimKiemGV.Enabled = true;
+            btnTimKiemHS.Enabled        = true;
+            btnTimKiemGV.Enabled        = true;
 
-            btnSiSo.Enabled = true;
-            btnThangDiem.Enabled = true;
-            btnDoTuoi.Enabled = true;
-            btnTruong.Enabled = true;
+            btnSiSo.Enabled             = true;
+            btnThangDiem.Enabled        = true;
+            btnDoTuoi.Enabled           = true;
+            btnTruong.Enabled           = true;
 
             //btnHuongDan.Enabled         = true;
             //btnThongTin.Enabled         = true;
@@ -528,9 +527,9 @@ namespace QLHocSinhTHPT
         public void IsGiaoVien()
         {
             //True
-            btnDangXuatContext.Enabled = true;
-            btnDoiMatKhauContext.Enabled = true;
-            btnThoatContext.Enabled = true;
+            btnDangXuatContext.Enabled  = true;
+            btnDoiMatKhauContext.Enabled= true;
+            btnThoatContext.Enabled     = true;
 
             //btnKQHKTheoLop.Enabled      = true;
             //btnKQHKTheoMon.Enabled      = true;
@@ -540,23 +539,23 @@ namespace QLHocSinhTHPT
             //btnDanhSachGiaoVien.Enabled = true;
             //btnDanhSachLopHoc.Enabled   = true;
 
-            btnTimKiemHS.Enabled = true;
-            btnTimKiemGV.Enabled = true;
+            btnTimKiemHS.Enabled        = true;
+            btnTimKiemGV.Enabled        = true;
 
             //btnHuongDan.Enabled         = true;
             //btnThongTin.Enabled         = true;
+            
+            btnDangNhapContext.Enabled  = false;
 
-            btnDangNhapContext.Enabled = false;
+            btnLopHoc.Enabled           = false;
+            btnHocSinh.Enabled          = false;
+            btnGiaoVien.Enabled         = false;
+            btnPhanCong.Enabled         = false;
 
-            btnLopHoc.Enabled = false;
-            btnHocSinh.Enabled = false;
-            btnGiaoVien.Enabled = false;
-            btnPhanCong.Enabled = false;
-
-            btnSiSo.Enabled = false;
-            btnThangDiem.Enabled = false;
-            btnDoTuoi.Enabled = false;
-            btnTruong.Enabled = false;
+            btnSiSo.Enabled             = false;
+            btnThangDiem.Enabled        = false;
+            btnDoTuoi.Enabled           = false;
+            btnTruong.Enabled           = false;
         }
         #endregion
 
@@ -564,32 +563,31 @@ namespace QLHocSinhTHPT
         public void IsGiaoVu()
         {
             //True
-            btnDangXuatContext.Enabled = true;
-            btnDoiMatKhauContext.Enabled = true;
-            btnThoatContext.Enabled = true;
-
-            btnLopHoc.Enabled = true;
-            btnHocSinh.Enabled = true;
-
-
-            btnTimKiemHS.Enabled = true;
-            btnTimKiemGV.Enabled = true;
+            btnDangXuatContext.Enabled  = true;
+            btnDoiMatKhauContext.Enabled= true;
+            btnThoatContext.Enabled     = true;
+            
+            btnLopHoc.Enabled           = true;
+            btnHocSinh.Enabled          = true;
 
 
-            btnDangNhapContext.Enabled = false;
+            btnTimKiemHS.Enabled        = true;
+            btnTimKiemGV.Enabled        = true;
 
-            btnGiaoVien.Enabled = false;
-            btnPhanCong.Enabled = false;
 
-            btnSiSo.Enabled = false;
-            btnThangDiem.Enabled = false;
-            btnDoTuoi.Enabled = false;
-            btnTruong.Enabled = false;
+            btnDangNhapContext.Enabled  = false;
+
+            btnGiaoVien.Enabled         = false;
+            btnPhanCong.Enabled         = false;
+
+            btnSiSo.Enabled             = false;
+            btnThangDiem.Enabled        = false;
+            btnDoTuoi.Enabled           = false;
+            btnTruong.Enabled           = false;
         }
         #endregion
 
         #endregion
-
 
         private void buttonFile_Click(object sender, EventArgs e)
         {

@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
+using QLHocSinhTHPT.Controller;
+using DevComponents.DotNetBar;
 
 namespace QLHocSinhTHPT
 {
-    public partial class frmTimKiemGV : Form
+    public partial class frmTimKiemGV : Office2007Form
     {
         #region Fields
-        MonHocCtrl m_MonHocCtrl = new MonHocCtrl();
-        GiaoVienCtrl m_GiaoVienCtrl = new GiaoVienCtrl();
+        MonHocCtrl      m_MonHocCtrl    = new MonHocCtrl();
+        GiaoVienCtrl    m_GiaoVienCtrl  = new GiaoVienCtrl();
         #endregion
 
         #region Constructor
@@ -43,7 +41,7 @@ namespace QLHocSinhTHPT
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             m_GiaoVienCtrl.TimKiemGiaoVien(txtHoTen, cmbTheoDChi, txtDiaChi, cmbTheoCMon, cmbCMon, dGVKetQuaTimKiem);
-
+            
             if (dGVKetQuaTimKiem.RowCount == 0)
                 MessageBoxEx.Show("Không có giáo viên cần tìm trong hệ thống!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }

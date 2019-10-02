@@ -79,11 +79,11 @@ namespace QLHocSinhTHPT.Controller
                 return 1;
             else
             {
-                m_NguoiDungInfo.TenND = m_DT.Rows[0]["TenND"].ToString();
-                m_LoaiNguoiDungInfo.MaLoai = m_DT.Rows[0]["MaLoai"].ToString();
+                m_NguoiDungInfo.TenND       = m_DT.Rows[0]["TenND"].ToString();
+                m_LoaiNguoiDungInfo.MaLoai  = m_DT.Rows[0]["MaLoai"].ToString();
 
                 m_NguoiDungInfo.LoaiND = m_LoaiNguoiDungInfo;
-
+                
                 Utilities.NguoiDung = m_NguoiDungInfo;
                 return 2;
             }

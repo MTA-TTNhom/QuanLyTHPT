@@ -11,7 +11,7 @@ namespace QLHocSinhTHPT.Bussiness
         {
 
         }
-
+        
         private String m_MaNghe;
         public String MaNghe
         {

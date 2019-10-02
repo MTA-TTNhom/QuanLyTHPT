@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLHocSinhTHPT", "QLHocSinhTHPT\QLHocSinhTHPT.csproj", "{2579EC7A-6103-4146-A029-C3DD28008621}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLHocSinhTHPT", "QLHocSinhTHPT\QLHocSinhTHPT.csproj", "{67B0B855-FC05-48CC-8FC9-2E0B7BB4FF42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2579EC7A-6103-4146-A029-C3DD28008621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2579EC7A-6103-4146-A029-C3DD28008621}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2579EC7A-6103-4146-A029-C3DD28008621}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2579EC7A-6103-4146-A029-C3DD28008621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B0B855-FC05-48CC-8FC9-2E0B7BB4FF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B0B855-FC05-48CC-8FC9-2E0B7BB4FF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B0B855-FC05-48CC-8FC9-2E0B7BB4FF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B0B855-FC05-48CC-8FC9-2E0B7BB4FF42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2997DF8A-EEB5-4D8E-9EDE-7C2737ACAF6E}
 	EndGlobalSection
 EndGlobal

@@ -1,21 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
+using QLHocSinhTHPT.Controller;
+using QLHocSinhTHPT.Component;
+using DevComponents.DotNetBar;
 
 namespace QLHocSinhTHPT
 {
-    public partial class frmNguoiDung : Form
+    public partial class frmNguoiDung : Office2007Form
     {
         #region Fields
-        NguoiDungCtrl m_NguoiDungCtrl = new NguoiDungCtrl();
-        LoaiNguoiDungCtrl m_LoaiNguoiDungCtrl = new LoaiNguoiDungCtrl();
-        QuyDinh quyDinh = new QuyDinh();
+        NguoiDungCtrl       m_NguoiDungCtrl     = new NguoiDungCtrl();
+        LoaiNguoiDungCtrl   m_LoaiNguoiDungCtrl = new LoaiNguoiDungCtrl();
+        QuyDinh             quyDinh             = new QuyDinh();
         #endregion
 
         #region Constructor
@@ -56,12 +55,12 @@ namespace QLHocSinhTHPT
             if (dGVNguoiDung.RowCount == 0)
                 bindingNavigatorDeleteItem.Enabled = true;
 
-            DataRow m_Row = m_NguoiDungCtrl.ThemDongMoi();
-            m_Row["MaND"] = "ND" + quyDinh.LaySTT(dGVNguoiDung.Rows.Count + 1);
-            m_Row["MaLoai"] = "";
-            m_Row["TenND"] = "";
-            m_Row["TenDNhap"] = "";
-            m_Row["MatKhau"] = "";
+            DataRow m_Row       = m_NguoiDungCtrl.ThemDongMoi();
+            m_Row["MaND"]       = "ND" + quyDinh.LaySTT(dGVNguoiDung.Rows.Count + 1);
+            m_Row["MaLoai"]     = "";
+            m_Row["TenND"]      = "";
+            m_Row["TenDNhap"]   = "";
+            m_Row["MatKhau"]    = "";
             m_NguoiDungCtrl.ThemNguoiDung(m_Row);
             bindingNavigatorNguoiDung.BindingSource.MoveLast();
         }
@@ -85,11 +84,11 @@ namespace QLHocSinhTHPT
 
         private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            if (KiemTraTruocKhiLuu("colMaND") == true &&
-                KiemTraTruocKhiLuu("colMaLoai") == true &&
-                KiemTraTruocKhiLuu("colTenND") == true &&
-                KiemTraTruocKhiLuu("colTenDNhap") == true &&
-                KiemTraTruocKhiLuu("colMatKhau") == true)
+            if (KiemTraTruocKhiLuu("colMaND")       == true &&
+                KiemTraTruocKhiLuu("colMaLoai")     == true &&
+                KiemTraTruocKhiLuu("colTenND")      == true &&
+                KiemTraTruocKhiLuu("colTenDNhap")   == true &&
+                KiemTraTruocKhiLuu("colMatKhau")    == true)
             {
                 bindingNavigatorPositionItem.Focus();
                 m_NguoiDungCtrl.LuuNguoiDung();

@@ -9,13 +9,13 @@ namespace QLHocSinhTHPT.Bussiness
     {
         public DiemInfo()
         {
-            m_HocSinh = new HocSinhInfo();
-            m_MonHoc = new MonHocInfo();
-            m_HocKy = new HocKyInfo();
-            m_NamHoc = new NamHocInfo();
-            m_LoaiDiem = new LoaiDiemInfo();
-            m_Lop = new LopInfo();
-            m_Diem = 0;
+            m_HocSinh   = new HocSinhInfo();
+            m_MonHoc    = new MonHocInfo();
+            m_HocKy     = new HocKyInfo();
+            m_NamHoc    = new NamHocInfo();
+            m_LoaiDiem  = new LoaiDiemInfo();
+            m_Lop       = new LopInfo();
+            m_Diem      = 0;
         }
 
         private HocSinhInfo m_HocSinh;

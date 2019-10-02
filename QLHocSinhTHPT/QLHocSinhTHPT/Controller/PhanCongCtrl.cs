@@ -44,7 +44,7 @@ namespace QLHocSinhTHPT.Controller
 
             cmbGiaoVien.DataBindings.Clear();
             cmbGiaoVien.DataBindings.Add("SelectedValue", bS, "MaGiaoVien");
-
+            
             dGV.DataSource = bS;
         }
         #endregion
@@ -54,7 +54,7 @@ namespace QLHocSinhTHPT.Controller
         {
             return m_PhanCongData.ThemDongMoi();
         }
-
+        
 
         public void ThemPhanCong(DataRow m_Row)
         {
