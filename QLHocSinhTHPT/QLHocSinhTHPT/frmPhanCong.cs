@@ -11,13 +11,7 @@ namespace QLHocSinhTHPT
 {
     public partial class frmPhanCong : Office2007Form
     {
-        #region Fields
-        PhanCongCtrl    m_PhanCongCtrl  = new PhanCongCtrl();
-        NamHocCtrl      m_NamHocCtrl    = new NamHocCtrl();
-        LopCtrl         m_LopCtrl       = new LopCtrl();
-        MonHocCtrl      m_MonHocCtrl    = new MonHocCtrl();
-        GiaoVienCtrl    m_GiaoVienCtrl  = new GiaoVienCtrl();
-        #endregion
+        
 
         #region Constructor
         public frmPhanCong()
@@ -121,33 +115,7 @@ namespace QLHocSinhTHPT
         }
         #endregion
 
-        #region Click event
-        private void btnThemNamHoc_Click(object sender, EventArgs e)
-        {
-            ThamSo.ShowFormNamHoc();
-            m_NamHocCtrl.HienThiDataGridViewComboBoxColumn(colMaNamHoc);
-        }
 
-        private void btnThemLop_Click(object sender, EventArgs e)
-        {
-            ThamSo.ShowFormLopHoc();
-            m_LopCtrl.HienThiDataGridViewComboBoxColumn(colMaLop);
-        }
-
-        private void btnThemMonHoc_Click(object sender, EventArgs e)
-        {
-            ThamSo.ShowFormMonHoc();
-            m_MonHocCtrl.HienThiDataGridViewComboBoxColumn(colMaMonHoc);
-        }
-
-        private void btnThemGiaoVien_Click(object sender, EventArgs e)
-        {
-            ThamSo.ShowFormGiaoVien();
-            m_GiaoVienCtrl.HienThiDataGridViewComboBoxColumn(colMaGiaoVien);
-        }
-
-        
-        #endregion
 
         #region SelectedIndexChanged event
         private void cmbNamHoc_SelectedIndexChanged(object sender, EventArgs e)
