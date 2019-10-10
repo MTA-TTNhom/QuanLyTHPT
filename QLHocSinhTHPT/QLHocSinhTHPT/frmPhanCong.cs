@@ -120,9 +120,7 @@ namespace QLHocSinhTHPT
         #region SelectedIndexChanged event
         private void cmbNamHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbNamHoc.SelectedValue != null)
-                m_LopCtrl.HienThiComboBox(cmbNamHoc.SelectedValue.ToString(), cmbLop);
-            cmbLop.DataBindings.Clear();
+            
         }
         #endregion
     }
