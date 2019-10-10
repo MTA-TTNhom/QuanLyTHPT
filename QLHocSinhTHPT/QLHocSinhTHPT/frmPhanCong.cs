@@ -11,7 +11,14 @@ namespace QLHocSinhTHPT
 {
     public partial class frmPhanCong : Office2007Form
     {
-        
+
+        #region Fields
+        PhanCongCtrl m_PhanCongCtrl = new PhanCongCtrl();
+        NamHocCtrl m_NamHocCtrl = new NamHocCtrl();
+        LopCtrl m_LopCtrl = new LopCtrl();
+        MonHocCtrl m_MonHocCtrl = new MonHocCtrl();
+        GiaoVienCtrl m_GiaoVienCtrl = new GiaoVienCtrl();
+        #endregion
 
         #region Constructor
         public frmPhanCong()
@@ -39,16 +46,16 @@ namespace QLHocSinhTHPT
         #endregion
 
         #region BindingNavigatorItems
-        
+
 
         private void bindingNavigatorExitItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        
 
-        
+
+
 
         public Boolean KiemTraTruocKhiLuu(String cellString)
         {
@@ -69,9 +76,9 @@ namespace QLHocSinhTHPT
 
         private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            if (KiemTraTruocKhiLuu("colMaNamHoc")   == true &&
-                KiemTraTruocKhiLuu("colMaLop")      == true &&
-                KiemTraTruocKhiLuu("colMaMonHoc")   == true &&
+            if (KiemTraTruocKhiLuu("colMaNamHoc") == true &&
+                KiemTraTruocKhiLuu("colMaLop") == true &&
+                KiemTraTruocKhiLuu("colMaMonHoc") == true &&
                 KiemTraTruocKhiLuu("colMaGiaoVien") == true)
             {
                 m_PhanCongCtrl.LuuPhanCong();
@@ -115,12 +122,40 @@ namespace QLHocSinhTHPT
         }
         #endregion
 
+        #region Click event
+        private void btnThemNamHoc_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormNamHoc();
+            m_NamHocCtrl.HienThiDataGridViewComboBoxColumn(colMaNamHoc);
+        }
 
+        private void btnThemLop_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormLopHoc();
+            m_LopCtrl.HienThiDataGridViewComboBoxColumn(colMaLop);
+        }
+
+        private void btnThemMonHoc_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormMonHoc();
+            m_MonHocCtrl.HienThiDataGridViewComboBoxColumn(colMaMonHoc);
+        }
+
+        private void btnThemGiaoVien_Click(object sender, EventArgs e)
+        {
+            ThamSo.ShowFormGiaoVien();
+            m_GiaoVienCtrl.HienThiDataGridViewComboBoxColumn(colMaGiaoVien);
+        }
+
+
+        #endregion
 
         #region SelectedIndexChanged event
         private void cmbNamHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (cmbNamHoc.SelectedValue != null)
+                m_LopCtrl.HienThiComboBox(cmbNamHoc.SelectedValue.ToString(), cmbLop);
+            cmbLop.DataBindings.Clear();
         }
         #endregion
     }
