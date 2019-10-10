@@ -33,6 +33,17 @@ namespace QLHocSinhTHPT.Controller
         }
         #endregion
 
+        #region Do du lieu vao DataGridView
+        public void HienThi(DataGridView dGV)
+        {
+            BindingSource bS = new BindingSource();
+
+            bS.DataSource = m_GiaoVienData.LayDsGiaoVien();
+            dGV.DataSource = bS;
+        }
+
+
+        #endregion
 
         #region Lay danh sach giao vien do vao report
         public static IList<GiaoVienInfo> LayDsGiaoVien()
@@ -69,7 +80,7 @@ namespace QLHocSinhTHPT.Controller
         {
             return m_GiaoVienData.ThemDongMoi();
         }
-        
+
 
         public void ThemGiaoVien(DataRow m_Row)
         {
@@ -89,6 +100,30 @@ namespace QLHocSinhTHPT.Controller
         }
         #endregion
 
+        #region Tìm kiem
+        public void TimKiemGiaoVien(TextBoxX txtHoTen,
+                                    ComboBoxEx cmbTheoDChi,
+                                    TextBoxX txtDiaChi,
+                                    ComboBoxEx cmbTheoCMon,
+                                    ComboBoxEx cmbCMon,
+                                    DataGridViewX dGV)
+        {
+            BindingSource bS = new BindingSource();
+            bS.DataSource = m_GiaoVienData.TimKiemGiaoVien(txtHoTen.Text, cmbTheoDChi.Text, txtDiaChi.Text, cmbTheoCMon.Text, cmbCMon.Text);
+
+            dGV.DataSource = bS;
+        }
+
+        public void TimTheoMa(String m_MaGiaoVien)
+        {
+            m_GiaoVienData.TimTheoMa(m_MaGiaoVien);
+        }
+
+        public void TimTheoTen(String m_TenGiaoVien)
+        {
+            m_GiaoVienData.TimTheoTen(m_TenGiaoVien);
+        }
+        #endregion
 
     }
 }
