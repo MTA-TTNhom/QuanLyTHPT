@@ -20,5 +20,25 @@ namespace QLHocSinhTHPT.Bussiness
         }
 
        
+
+        private GiaoVienInfo m_GiaoVien;
+        public GiaoVienInfo GiaoVien
+        {
+            get { return m_GiaoVien; }
+            set { m_GiaoVien = value; }
+        }
+        private LopInfo m_Lop;
+        public LopInfo Lop
+        {
+            get { return m_Lop; }
+            set { m_Lop = value; }
+        }
+
+        private MonHocInfo m_MonHoc;
+        public MonHocInfo MonHoc
+        {
+            get { return m_MonHoc; }
+            set { m_MonHoc = value; }
+        }
     }
 }

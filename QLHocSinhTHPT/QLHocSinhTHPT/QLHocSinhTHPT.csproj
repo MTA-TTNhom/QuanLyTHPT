@@ -103,6 +103,7 @@
     <Compile Include="Bussiness\NamHocInfo.cs" />
     <Compile Include="Bussiness\NgheNghiepInfo.cs" />
     <Compile Include="Bussiness\NguoiDungInfo.cs" />
+    <Compile Include="Bussiness\TonGiaoInfo.cs" />
     <Compile Include="Component\CalendarColumn.cs" />
     <Compile Include="Component\frmConnection.cs">
       <SubType>Form</SubType>
